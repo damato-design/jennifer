@@ -1,0 +1,12 @@
+<ul class='work'>
+  {%- for work in collections.page | reverse %}
+  <li style="--accent-color: {{ work.data.accent }}">
+    <a href="{{ work.url }}">
+      {{ work.data.title }}
+      {{ work.data.desc }}
+      {{ work.data.tags | join(',') }}
+      <img src="{{work.data.img}}"/>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

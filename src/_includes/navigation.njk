@@ -1,0 +1,28 @@
+<nav>
+  <header>
+    <a href="/">
+      {% include "logo.svg" %}
+      <span>Jennifer Ip</span>
+    </a>
+    <label for="navigation-toggle">
+      <liga-icon>menu</liga-icon>
+    </label>
+  </header>
+  <input type="checkbox" id="navigation-toggle"/>
+  <div data-density-shift>
+    <a id="skip" href="#content">Skip to main content</a>
+    <ul>
+    {%- for label, link in site.navigation %}
+      <li>
+        {%- if '@' in link %}
+          <clipboard-copy value={{ link }}>
+            <a>{{ label }}</a>
+          </clipboard-copy>
+        {% else %}
+          <a href="{{ link }}" {{ 'download' if 'pdf' in link }}>{{ label }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</nav>

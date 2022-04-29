@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" style="--accent-color: {{ accent }}">
+  <head>
+    <title>{{ title }} - {{ site.title }}</title>
+    {% include "head.njk" %}
+  </head>
+  <body id="{{ page.fileSlug }}">
+    <div id="navigation-chrome" data-density-shift class="max-content">
+      {% include "navigation.njk" %}
+      <main id="main">
+        <div class="content">
+          {{ content | safe }}
+        </div>
+        {%- if not page.fileSlug %}
+        {% include "work.njk" %}
+        {% endif %}
+        <site-attribution></site-attribution>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+#about .content {
+  display: block;
+}
+
+#about .content p {
+  margin-block: var(--space--near);
+}
+
+#about .content img {
+  float: left;
+  max-width: 360px;
+  margin-right: var(--space--near);
+}
