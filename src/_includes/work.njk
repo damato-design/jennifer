@@ -3,7 +3,9 @@
   <li style="--accent-color: {{ work.data.accent }}">
     <a href="{{ work.url }}">
       {%- if work.data.img %}
-      <img src="{{work.data.img}}" class="work-image"/>
+      <div class="work-shadow">
+        <img src="{{work.data.img}}" class="work-image"/>
+      </div>
       {% endif %}
       <div class="work-info">
         <ul class="work-details text--detail" data-density-shift>
