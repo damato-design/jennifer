@@ -78,6 +78,15 @@
   vertical-align: 1px;
 }
 
+.intro-title {
+  color: var(--accent-color);
+  margin-bottom: var(--space--away);
+}
+
+.content :is(h2, h3) {
+  color: var(--accent-color);
+}
+
 @media (min-width: 860px) {
   :is(#index, #about) #main  {
     margin-top: 10rem;
