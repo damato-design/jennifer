@@ -1,5 +1,7 @@
 module.exports = function(eleventyConfig) {
 
+  eleventyConfig.addFilter("year", (date) => `${new Date(date).getUTCFullYear()}`);
+
   eleventyConfig.addPassthroughCopy({"src/public/**/*.(css|jpg|png|svg|webmanifest|ico|pdf)": "/"});
 
   return {

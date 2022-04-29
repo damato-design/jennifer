@@ -2,12 +2,20 @@
   {%- for work in collections.page | reverse %}
   <li style="--accent-color: {{ work.data.accent }}">
     <a href="{{ work.url }}">
-      {{ work.data.title }}
-      {{ work.data.desc }}
-      {%- if work.data.roles %}
-      {{ work.data.roles | join(',') }}
+      {%- if work.data.img %}
+      <img src="{{work.data.img}}" class="work-image"/>
       {% endif %}
-      <img src="{{work.data.img}}"/>
+      <div class="work-info">
+        <ul class="work-details text--detail" data-density-shift>
+          {%- if work.data.roles %}
+          <li>{{ work.data.roles | join(', ') }}</li>
+          {% endif %}
+          <li>{{ work.data.date | year }}</li>
+          <li>{{ work.data.project }} project</li>
+        </ul>
+        <h2>{{ work.data.title }}</h2>
+        <p>{{ work.data.desc }}</p>
+      </div>
     </a>
   </li>
   {%- endfor %}

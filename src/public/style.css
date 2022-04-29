@@ -1,3 +1,56 @@
-#navigation-chrome nav a {
+.site-name {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.work, .work-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work > li {
+  margin-block: var(--space--away);
+  transform: skewx(-5deg);
+}
+
+.work a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  color: inherit;
+}
+
+.work :is(h2, ul) {
+  transition: .218s ease;
+}
+
+.work a:hover :is(ul, h2) {
   color: var(--accent-color);
+}
+
+.work img + .work-info {
+  background: var(--box_standard_background-color);
+  padding: var(--space--away);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--near);
+  border: 1em solid var(--accent-color);
+  margin-top: -15%;
+  margin-inline: var(--space--away);
+  position: relative;
+}
+
+.work-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space--near);
+  text-transform: capitalize;
+}
+
+.work-details li:not(:last-child):after {
+  content: '\0025b0';
+  margin-left: var(--space--near);
+  line-height: 1;
+  vertical-align: 1px;
 }

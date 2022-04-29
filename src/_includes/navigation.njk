@@ -2,14 +2,14 @@
   <header>
     <a href="/">
       {% include "logo.svg" %}
-      <span>Jennifer Ip</span>
+      <h2 class="site-name">Jennifer Ip</h2>
     </a>
     <label for="navigation-toggle">
       <liga-icon>menu</liga-icon>
     </label>
   </header>
   <input type="checkbox" id="navigation-toggle"/>
-  <div data-density-shift>
+  <div>
     <a id="skip" href="#content">Skip to main content</a>
     <ul>
     {%- for label, link in site.navigation %}
