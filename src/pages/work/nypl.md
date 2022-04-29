@@ -9,3 +9,46 @@ roles:
   - UI Design
 img: nypl_cover.jpg
 ---
+
+The New York Public Library (NYPL) has been an essential provider of free books, information, ideas, and education for all New Yorkers for more than 100 years.
+
+**The NYPL e-reader app allows users to instantly borrow from the library's collection of more than 300,000 e-books in just a few easy steps.**
+
+## The Problem
+
+Taking an in-depth look at the library's existing e-reader app, a couple of issues in it's structure was uncovered.
+
+There were a few issues found in the current app design:
+
+1. **Book Legibility**: there wasn't a way for user to read the title and author of the book until they clicked on the book (unless they had impeccable vision to read it off the cover)
+
+1. **Books Discovery**: there wasn't a way for users to find books in genres of their liking, unless they knew exactly what they were looking for
+
+1. **Books on Your Time**: there wasn't a way in the app to save books users were interested in, but didn't have the time to read right away
+
+## Simple Touches For Big Impact
+
+These issues were solved while also upping the animation styling for the app to provide a more delightful user experience.
+
+### 1. Book Legibility
+Using the existing app, it was difficult to read the title of the books in the selection without taking another step to read more about the book.
+
+**This was addressed this by making the book covers larger and adding the title and author under it so it was more visual and easier to read.**
+
+TODO_IMAGE
+
+### 2. Book Discovery
+
+The existing app doesn't take the user's reading preferences into consideration. They have these generic sections set up that the user may or may not care about. To solve for this, a separate tab that would allow the user to customize their sections was created so they can view books they might be interested in.
+
+TODO_IMAGE
+
+### 3. Books on Your Time
+
+There are times where you want to read a certain book, but timing just isn't right and you don't want to forget about it. In their website, there's a way to either hold (if there's a queue for it) or to put books in your "book bag", as a way to save the book for later.
+
+TODO_IMAGE
+
+That's not an option in the app. This is where the addition of a favoriting function comes in handy. **By favoriting, it goes to the top of Your Categories so you have a reminder for when you are ready to immerse yourself.**
+
+TODO_IMAGE
