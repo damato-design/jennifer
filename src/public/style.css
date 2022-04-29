@@ -44,23 +44,19 @@
 }
 
 .work-shadow {
-  filter: drop-shadow(.5rem 1rem 0px var(--accent-color));
+  filter: drop-shadow(1rem 1rem 0px var(--accent-color));
 }
 
 .work img {
-  --skew-amount: 10rem;
+  --skew-amount: 2rem;
   clip-path: polygon(var(--skew-amount) 0%, 100% 0%, calc(100% - var(--skew-amount)) 100%, 0% 100%);
 }
 
 .work-info {
-  background: var(--box_standard_background-color);
-  padding: var(--space--near) var(--space--away);
+  padding: var(--space--near);
   display: flex;
   flex-direction: column;
   gap: var(--space--near);
-  margin-top: calc(var(--space--away) * -1);
-  border-top: var(--space--near) solid var(--accent-color);
-  margin-inline: var(--space--away);
   position: relative;
 }
 
@@ -89,10 +85,14 @@
 
 @media (min-width: 860px) {
   :is(#index, #about) #main  {
-    margin-top: 10rem;
+    margin-top: 9rem;
   }
 
   .site-name {
     display: block;
+  }
+
+  .work img {
+    --skew-amount: 9rem;
   }
 }
