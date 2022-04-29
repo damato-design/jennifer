@@ -4,7 +4,9 @@
     <a href="{{ work.url }}">
       {{ work.data.title }}
       {{ work.data.desc }}
-      {{ work.data.tags | join(',') }}
+      {%- if work.data.roles %}
+      {{ work.data.roles | join(',') }}
+      {% endif %}
       <img src="{{work.data.img}}"/>
     </a>
   </li>

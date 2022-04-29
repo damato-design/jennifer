@@ -8,6 +8,9 @@
     <div id="navigation-chrome" data-density-shift class="max-content">
       {% include "navigation.njk" %}
       <main id="main">
+        {%- if img %}
+        {% include "intro.njk" %}
+        {% endif %}
         <div class="content">
           {{ content | safe }}
         </div>
