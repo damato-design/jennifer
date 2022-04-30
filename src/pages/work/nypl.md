@@ -35,20 +35,23 @@ Using the existing app, it was difficult to read the title of the books in the s
 
 **This was addressed this by making the book covers larger and adding the title and author under it so it was more visual and easier to read.**
 
-TODO_IMAGE
+<fab-four>
+<img src="nypl_previous_home.png"/>
+<img src="nypl_redesign_home.png">
+</fab-four>
 
 ### 2. Book Discovery
 
 The existing app doesn't take the user's reading preferences into consideration. They have these generic sections set up that the user may or may not care about. To solve for this, a separate tab that would allow the user to customize their sections was created so they can view books they might be interested in.
 
-TODO_IMAGE
+![](nypl_categories_scroll.gif)
 
 ### 3. Books on Your Time
 
 There are times where you want to read a certain book, but timing just isn't right and you don't want to forget about it. In their website, there's a way to either hold (if there's a queue for it) or to put books in your "book bag", as a way to save the book for later.
 
-TODO_IMAGE
+![](nypl_book_bag.png)
 
 That's not an option in the app. This is where the addition of a favoriting function comes in handy. **By favoriting, it goes to the top of Your Categories so you have a reminder for when you are ready to immerse yourself.**
 
-TODO_IMAGE
+![](nypl_favorited.gif)
