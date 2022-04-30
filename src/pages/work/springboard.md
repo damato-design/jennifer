@@ -24,7 +24,7 @@ A few pain-points include:
 1. The right rail information is a static section, yet because of how it looked, a lot of users tried to click on it to "see it in action" (content did not help in this instance).
 1. The images were very small and there was no way to enlarge the image.
 
-TODO_IMAGE
+![](springboard_original.png)
 
 ### Brief Descriptions
 
@@ -42,7 +42,7 @@ TODO_IMAGE
 
 As we were reviewing the user feedback and working through the content, we noticed that there were two types of users; some came wanting to know how the Springboard Feature related to the Rubrics, while others wanted to know all Features related to a specific Rubric. Due to this, we decided to create an new Rubrics menu page that categorized the Features into the three categories.
 
-TODO_IMAGE
+![](springboard_flow.png)
 
 ## My Role
 
@@ -58,14 +58,18 @@ I used the research findings to start designing the Features page and thinking o
 
 A few of the iterations as the team went back and forth on what information and how much of it to display.
 
-TODO_IMAGE
+![](springboard_mockups.png)
 
 When design was finalized, I spec'd out all the pages for the agency to build and aligned it to our design system the best I could, as some of the elements were custom to the website. I reviewed the work as it was being built in desktop and mobile format to make sure things were translating correctly.
 
-TODO_IMAGE
+![](springboard_specs.png)
 
 ## The Result
 
 **After months of research, design, and build, we launched both the [National](https://springboard.collegeboard.org/review/ela/) and [Texas](https://springboard.collegeboard.org/review/texas/) ELA guides.**
 
-TODO_IMAGE
+![](springboard_result1.png)
+![](springboard_result2.png)
+![](springboard_result3.png)
+![](springboard_result4.png)
+![](springboard_result5.png)
