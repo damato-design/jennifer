@@ -18,19 +18,19 @@ With increase access to the internet, a large majority of users will self-diagno
 
 Kind of like this:
 
-TODO_IMAGE
+![](medic_headache.gif)
 
 I wanted to see if there were others that felt this way, what was out there, and also to see what can be done to alleviate this stressful experience.
 
 ## Research Scope
 
-TODO_IMAGE
+![](medic_research_scope.png)
 
 ## Findings
 
 **A large population of people use the internet for medical purposes when something doesn’t feel right.**
 
-TODO_IMAGE
+![](medic_findings.png)
 
 People search for their ailments for many reasons and have varying thoughts regarding using the internet and doctors. A large majority will use the internet as a first step, even though they feel that no site truly catered to all. They also know that can't trust everything on the internet (the internet doesn't make you a doctor!).
 
@@ -50,7 +50,23 @@ During my research, I came across a **symptom checker**. It's a tool that helps 
 
 Some major sites have it, however, they don't highlight the checker (or even make it easy to find). Other sites put it at front and center, but aren't as well known. This tells me that **there's room to improve symptom checkers**; the more trusted sites has developed their version of the tool as an add-on to their site but doesn't necessarily know what to do with it/where to place it.
 
-TODO_IMAGE
+<fab-four column-max="3" gap="var(--space--near)" data-density-shift>
+<div>
+
+![](medic_webmd.png) WebMD Symptom Checker: Starts with your age and gender.
+
+</div>
+<div>
+
+![](medic_symcat.png) Symcat Home Page/Symptom Checker: Starts with entering a symptom or selecting from their examples list.
+
+</div>
+<div>
+
+![](medic_mayoclinic.jpg) Mayo Clinic Symptom Checker: Starts with selecting from a set list of symptoms
+
+</div>
+</fab-four>
 
 ## Proposal
 
@@ -64,18 +80,34 @@ TODO_IMAGE
 
 With the understanding that in the early stage, we cannot expect users to enter our site as a start point, I've created a more realistic user flow based off how users currently search; the START (homepage) is a few steps in.
 
-TODO_IMAGE
+![](medic_flow.png)
 
 ## Testing Scope
 
-TODO_IMAGE
+![](medic_testing_scope.png)
 
 ## The Product
 
 **Ideations and sketches...**
 
-TODO_IMAGE
+![](medic_sketches.png)
 
 **To something more.**
 
-TODO_IMAGE
+<fab-four column-max="3" gap="var(--space--near)" data-density-shift>
+<div>
+
+![](medic_result1.gif) Users can enter the symptom tracker from the conditions page they enter from with the widget at the top.
+
+</div>
+<div>
+
+![](medic_result2.gif) Users can stay on our site to view resources on the condition from other reputable site.
+
+</div>
+<div>
+
+![](medic_result3.gif) Results page allows users to make changes or start over if needed. Also allows users to understand their results with a strength key.s
+
+</div>
+</fab-four>
