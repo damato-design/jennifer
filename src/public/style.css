@@ -44,7 +44,7 @@
 }
 
 .work-shadow {
-  filter: drop-shadow(1rem 1rem 0px var(--accent-color));
+  filter: drop-shadow(var(--space--near) var(--space--near) 0px var(--accent-color));
 }
 
 .work img {
