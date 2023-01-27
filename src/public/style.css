@@ -2,13 +2,21 @@ body {
   opacity: 1;
 }
 
+.max-content {
+  max-width: calc(960px - var(--space--away));
+}
+
+#navigation-chrome nav {
+  flex: 1 0 20%;
+}
+
 #navigation-chrome nav ul {
   gap: var(--space--away);
 }
 
 #index,
 #about,
-#navigation-chrome {
+#navigation-chrome nav {
   font-family: var(--text_heading_font-family);
 }
 
