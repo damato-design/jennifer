@@ -1,13 +1,7 @@
 body {
   opacity: 1;
-}
-
-.max-content {
-  max-width: calc(960px - var(--space--away));
-}
-
-#navigation-chrome nav {
-  flex: 1 0 20%;
+  line-height: 1.5;
+  color: #fcfcfc;
 }
 
 #navigation-chrome nav ul {
@@ -18,11 +12,12 @@ body {
 #about,
 #navigation-chrome nav {
   font-family: var(--text_heading_font-family);
+  transition: none;
 }
 
 #index h2 {
   font-size: 2em;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   border: 0;
 }
 
@@ -47,6 +42,7 @@ body {
 a {
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
+  color: currentColor;
 }
 
 #navigation-chrome nav a {

@@ -13,7 +13,7 @@
     <ul>
     {%- for label, link in site.navigation %}
       <li>
-        <a href="{{ link }}" {{ 'download' if 'pdf' in link }}>{{ label }}</a>
+        <a href="{{ link }}" {{ 'target="_blank"' if 'pdf' in link }}>{{ label }}</a>
       </li>
     {% endfor %}
     </ul>
