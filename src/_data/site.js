@@ -9,6 +9,6 @@ module.exports = {
     work: '/',
     about: '/about',
     resume: '/jipdamato_resume.pdf',
-    contact: 'mailto:jennifer@damato.design',
+    contact: 'https://cal.com/jennifer-damato',
   },
 }

@@ -2,25 +2,18 @@
   <header>
     <a href="/">
       {% include "logo.svg" %}
-      <h2 class="site-name">Jennifer Ip</h2>
     </a>
     <label for="navigation-toggle">
       <liga-icon>menu</liga-icon>
     </label>
   </header>
   <input type="checkbox" id="navigation-toggle"/>
-  <div>
+  <div data-density-shift>
     <a id="skip" href="#content">Skip to main content</a>
     <ul>
     {%- for label, link in site.navigation %}
       <li>
-        {%- if '@' in link %}
-          <clipboard-copy value={{ link }}>
-            <a>{{ label }}</a>
-          </clipboard-copy>
-        {% else %}
-          <a href="{{ link }}" {{ 'download' if 'pdf' in link }}>{{ label }}</a>
-        {% endif %}
+        <a href="{{ link }}" {{ 'download' if 'pdf' in link }}>{{ label }}</a>
       </li>
     {% endfor %}
     </ul>

@@ -3,21 +3,14 @@
   <li style="--accent-color: {{ work.data.accent }}">
     <a href="{{ work.url }}">
       {%- if work.data.img %}
-      <div class="work-shadow">
+      <div class="work-frame">
         <img src="{{work.data.img}}" class="work-image"/>
+        <div class="work-info">
+          <h3>{{ work.data.title }}</h3>
+          <span class="text--detail">{{ work.data.date | year }}</span>
+        </div>
       </div>
       {% endif %}
-      <div class="work-info">
-        <ul class="work-details text--detail" data-density-shift>
-          {%- if work.data.roles %}
-          <li>{{ work.data.roles | join(', ') }}</li>
-          {% endif %}
-          <li>{{ work.data.date | year }}</li>
-          <li>{{ work.data.project }} project</li>
-        </ul>
-        <h2>{{ work.data.title }}</h2>
-        <p>{{ work.data.desc }}</p>
-      </div>
     </a>
   </li>
   {%- endfor %}
