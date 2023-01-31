@@ -1,6 +1,6 @@
 <ul class='work'>
   {%- for work in collections.page | reverse %}
-  <li style="--accent-color: {{ work.data.accent }}">
+  <li>
     <a href="{{ work.url }}">
       {%- if work.data.img %}
       <div class="work-frame">
