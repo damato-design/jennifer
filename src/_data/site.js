@@ -8,7 +8,7 @@ module.exports = {
   navigation: {
     work: '/',
     about: '/about',
-    resume: '/jipdamato_resume.pdf',
+    resume: '/resume',
     contact: 'https://cal.com/jennifer-damato',
   },
 }
