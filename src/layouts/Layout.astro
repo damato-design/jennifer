@@ -1,0 +1,19 @@
+---
+import Head from '@components/Head.astro';
+import Navigation from '@components/Navigation.astro';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<Head { ...Astro.props }/>
+	<body>
+		<Navigation/>
+		<Header { ...Astro.props }/>
+		<main class="max-width">
+			<slot/>
+		</main>
+		<Footer/>
+	</body>
+</html>

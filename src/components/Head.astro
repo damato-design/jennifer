@@ -1,0 +1,94 @@
+---
+import { ClientRouter } from "astro:transitions";
+const { title, desc } = Astro.props;
+const ogImage = new URL(`og-image.png`, Astro.url.origin).toString();
+const schema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: title,
+    description: desc,
+    image: [ogImage],
+    dateCreated: '2024-01-18T12:00:00-05:00',
+    dateModified: new Date().toISOString(),
+    mainEntity: {
+        "@id": "#main-author",
+        "@type": "Person",
+        name: "Jennifer D'Amato",
+        alternateName: "jipdamato",
+        description: "Design Systems Architect",
+        image: "http://jennifer.damato.design/images/jipdamato_image.jpg",
+        sameAs: [
+            "https://twitter.com/jipdamato",
+            "https://linkedin.com/in/jipdamato",
+        ],
+    },
+};
+---
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{title}</title>
+    <ClientRouter />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={desc} />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jipdamato" />
+    <meta name="twitter:creator" content="@jipdamato" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={desc} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image:alt" content={title} />
+    <meta name="theme-color" content="#fff" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" /> -->
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+</head>
+
+<style is:global>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    :root {
+        --content-width: 60ch;
+    }
+
+    body {
+        margin: 0;
+        font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+        font-optical-sizing: auto;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    :where(h1, h2, h3) {
+        font-family: "Syncopate", serif;
+    }
+
+    .max-width {
+        max-width: min(var(--content-width) - 2rem, 100vw - 2rem);
+        margin-inline: auto;
+    }
+</style>

@@ -1,0 +1,17 @@
+---
+const { accent } = Astro.props;
+---
+
+<style define:vars={{ accent }}>
+    header {
+        background-color: var(--accent);
+    }
+
+    header > div {
+        padding-block: 2rem;
+    }
+</style>
+
+<header>
+    <div class="max-width">header</div>
+</header>

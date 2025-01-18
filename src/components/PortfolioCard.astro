@@ -1,0 +1,27 @@
+---
+const { title, img } = Astro.props;
+---
+
+<style>
+
+    a {
+        display: flow-root;
+    }
+
+    img {
+        mask-image: url('shape.svg');
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        float: right;
+        shape-outside: url('shape.svg');
+        shape-margin: 1rem;
+        width: 70%;
+    }
+</style>
+
+<a>
+    <img src={ img } />
+    <div>
+        <h2>{ title }</h2>
+    </div>
+</a>
