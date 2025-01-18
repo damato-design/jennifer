@@ -12,9 +12,10 @@ const navigation = {
 <style>
     .navigation {
         position: sticky;
-        top: 0;
+        top: 1rem;
         pointer-events: none;
         margin-block: 1rem;
+        z-index: 1;
     }
 
     nav {
@@ -23,6 +24,11 @@ const navigation = {
         gap: 1rem;
         justify-content: space-between;
         align-items: center;
+        background-color: color-mix(in oklch, white, transparent 30%);
+        backdrop-filter: blur(5px);
+        padding: 1rem 1.5rem;
+        border-radius: 100vw;
+        border: 1px solid white;
     }
 
     ul {
@@ -37,11 +43,12 @@ const navigation = {
     nav :global(svg) {
         height: 1.5lh;
     }
+
 </style>
 
 <div class="navigation">
     <nav class="max-width">
-        <Logo/>
+        <a href="/"><Logo/></a>
         <ul>
             { Object.entries(navigation).map(([label, href]) => <li><a href={ href }>{ label }</a></li>) }
         </ul>

@@ -5,6 +5,7 @@ const other = defineCollection({
     loader: glob({ pattern: ['*.mdx?'], base: 'src/content/other' }),
     schema: z.object({
         title: z.string(),
+        desc: z.string(),
         accent: z.string(),
     }),
 });

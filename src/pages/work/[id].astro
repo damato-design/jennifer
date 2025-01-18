@@ -16,6 +16,15 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
+<style>
+
+:global(h2, h3) {
+  margin-block-start: 1.5em;
+  margin-block-end: .5em; 
+}
+
+</style>
+
 <Layout { ...post.data }>
 	<Content/>
 </Layout>

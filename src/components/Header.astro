@@ -1,17 +1,43 @@
 ---
-const { accent } = Astro.props;
+const { accent, title, desc, img } = Astro.props;
+const bgimg = `url(${img})`;
 ---
 
-<style define:vars={{ accent }}>
+<style define:vars={{ accent, bgimg }}>
     header {
-        background-color: var(--accent);
+        background-color: var(--accent, black);
+        background-image: var(--bgimg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    header:before {
+        content: '';
+        background-color: inherit;
+        grid-area: 1 / 1 / -1 / -1;
+        display: flex;
+        opacity: .9;
     }
 
     header > div {
         padding-block: 2rem;
+        position: relative;
+        grid-area: 1 / 1 / -1 / -1;
+    }
+
+    p {
+        max-width: 30ch;
     }
 </style>
 
 <header>
-    <div class="max-width">header</div>
+    <div class="max-width">
+        <h1>{ title }</h1>
+        <p>{ desc }</p>
+    </div>
 </header>

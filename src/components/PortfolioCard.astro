@@ -1,11 +1,13 @@
 ---
-const { title, img } = Astro.props;
+import Roles from '@components/Roles.astro'
+const { url, img, title, desc, roles } = Astro.props;
 ---
 
 <style>
 
     a {
         display: flow-root;
+        text-decoration: none;
     }
 
     img {
@@ -17,11 +19,16 @@ const { title, img } = Astro.props;
         shape-margin: 1rem;
         width: 70%;
     }
+
+    .content {
+        padding-block: 1rem;
+    }
 </style>
 
-<a>
+<a href={ url }>
     <img src={ img } />
-    <div>
+    <div class="content">
         <h2>{ title }</h2>
+        <p>{ desc }</p>
     </div>
 </a>

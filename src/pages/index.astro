@@ -1,8 +1,9 @@
 ---
 import PortfolioCard from '@components/PortfolioCard.astro';
 import Layout from '@layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
+const about = await getEntry('other', 'about');
 const work = await getCollection('work');
 // order by date
 ---
@@ -15,8 +16,10 @@ const work = await getCollection('work');
 	}
 </style>
 
-<Layout>
+<Layout { ...about.data }>
 	<div>
-		{ work.map((post) => <PortfolioCard { ...post.data }/>) }
+		{ work.map((post) => {
+			return <PortfolioCard { ...post.data } url={ `/work/${post.slug}` }/>
+		}) }
 	</div>
 </Layout>
