@@ -1,0 +1,23 @@
+---
+const { columns, threshold = '600px' } = Astro.props;
+---
+
+<style define:vars={{ columns, threshold }}>
+    .fabfour {
+        --gap: 1rem;
+        --gap-spacing: calc(var(--gap) * (var(--columns) - 1));
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--gap);
+    }
+
+    .fabfour > :global(*) {
+        min-width: calc((100% - var(--gap-spacing)) / var(--columns));
+        max-width: 100%;
+        width: calc((var(--threshold) - 100%) * 100000);
+    }
+</style>
+
+<div class="fabfour">
+    <slot/>
+</div>

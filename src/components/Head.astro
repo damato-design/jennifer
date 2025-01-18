@@ -70,7 +70,7 @@ const schema = {
     }
 
     :root {
-        --content-width: 60ch;
+        --content-width: 80ch;
     }
 
     html {
@@ -99,5 +99,9 @@ const schema = {
         max-width: min(var(--content-width) - 3rem, 100vw - 3rem);
         margin-inline: auto;
         width: 100%;
+    }
+
+    p:has(img) {
+        display: contents;
     }
 </style>

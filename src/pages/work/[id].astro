@@ -29,17 +29,31 @@ const { Content } = await render(post);
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
   gap: 1em;
-  align-items: end;
   justify-content: center;
-  padding-inline: 15%;
+  align-items: start;
+  padding-block: 1.5rem;
+  padding-inline: 20%;
   color: white;
 }
 
-.things {
+hr {
+  align-self: stretch;
+  margin: 0;
+}
+
+.lockup {
   font-family: "Syncopate", serif;
   font-weight: bolder;
+  text-align: right;
+  align-self: end;
+  transform-origin: bottom right;
+  scale: .7;
+}
+
+.year {
+  font-size: 1.5em;
+  margin-block-end: .25em;
 }
 
 </style>
@@ -47,11 +61,12 @@ const { Content } = await render(post);
 <Layout { ...post.data }>
   <Float>
     <div class="content" style={{ backgroundColor: post.data.accent }}>
-      <div class="things">
-        <div>{ new Date(post.data.date).getFullYear() }</div>
-      <div>{ post.data.project }</div>
+      <div class="lockup">
+        <div class="year">{ new Date(post.data.date).getFullYear() }</div>
+        <div>{ post.data.project } project</div>
       </div>
-      <!-- <Roles roles={ post.data.roles }/> -->
+      <hr/>
+      <Roles roles={ post.data.roles }/>
     </div>
   </Float>
 	<Content/>

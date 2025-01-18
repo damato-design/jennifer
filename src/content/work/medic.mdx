@@ -5,12 +5,14 @@ accent: rgb(41, 97, 202)
 desc: A better way to self-diagnosing.
 project: course
 roles:
-  - User Research
+  - UX Design
   - Prototyping
   - User Testing
-  - UX Design
+  - User Research
 img: /images/medic_cover.jpg
 ---
+
+import FabFour from '@components/FabFour.astro'
 
 With increase access to the internet, a large majority of users will self-diagnose when something doesn’t feel right; it has become the norm. People still go to doctors, but often their first step is to see if they can treat it themselves first.
 
@@ -50,7 +52,7 @@ During my research, I came across a **symptom checker**. It's a tool that helps 
 
 Some major sites have it, however, they don't highlight the checker (or even make it easy to find). Other sites put it at front and center, but aren't as well known. This tells me that **there's room to improve symptom checkers**; the more trusted sites has developed their version of the tool as an add-on to their site but doesn't necessarily know what to do with it/where to place it.
 
-<fab-four column-max="3" gap="var(--space--near)" data-density-shift>
+<FabFour columns={ 3 }>
 <div>
 
 ![](/images/medic_webmd.png) WebMD Symptom Checker: Starts with your age and gender.
@@ -66,7 +68,7 @@ Some major sites have it, however, they don't highlight the checker (or even mak
 ![](/images/medic_mayoclinic.jpg) Mayo Clinic Symptom Checker: Starts with selecting from a set list of symptoms
 
 </div>
-</fab-four>
+</FabFour>
 
 ## Proposal
 
@@ -94,7 +96,7 @@ With the understanding that in the early stage, we cannot expect users to enter 
 
 **To something more.**
 
-<fab-four column-max="3" gap="var(--space--near)" data-density-shift>
+<FabFour columns={ 3 }>
 <div>
 
 ![](/images/medic_result1.gif) Users can enter the symptom tracker from the conditions page they enter from with the widget at the top.
@@ -110,4 +112,4 @@ With the understanding that in the early stage, we cannot expect users to enter 
 ![](/images/medic_result3.gif) Results page allows users to make changes or start over if needed. Also allows users to understand their results with a strength key.s
 
 </div>
-</fab-four>
+</FabFour>

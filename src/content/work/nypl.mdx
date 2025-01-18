@@ -10,6 +10,8 @@ roles:
 img: /images/nypl_cover.jpg
 ---
 
+import FabFour from '@components/FabFour.astro'
+
 The New York Public Library (NYPL) has been an essential provider of free books, information, ideas, and education for all New Yorkers for more than 100 years.
 
 **The NYPL e-reader app allows users to instantly borrow from the library's collection of more than 300,000 e-books in just a few easy steps.**
@@ -35,10 +37,13 @@ Using the existing app, it was difficult to read the title of the books in the s
 
 **This was addressed this by making the book covers larger and adding the title and author under it so it was more visual and easier to read.**
 
-<fab-four>
-<img src="nypl_previous_home.png"/>
-<img src="nypl_redesign_home.png"/>
-</fab-four>
+<FabFour columns={ 2 }>
+
+![](/images/nypl_previous_home.png)
+
+![](/images/nypl_redesign_home.png)
+
+</FabFour>
 
 ### 2. Book Discovery
 

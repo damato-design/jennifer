@@ -29,6 +29,7 @@ const navigation = {
         padding: 1rem 1.5rem;
         border-radius: 100vw;
         border: 1px solid white;
+        /* max-width: min(var(--content-width) - 4rem, 100vw - 4rem); */
     }
 
     ul {
@@ -48,7 +49,9 @@ const navigation = {
 
 <div class="navigation">
     <nav class="max-width">
-        <a href="/"><Logo/></a>
+        <a href="/">
+            <Logo/>
+        </a>
         <ul>
             { Object.entries(navigation).map(([label, href]) => <li><a href={ href }>{ label }</a></li>) }
         </ul>

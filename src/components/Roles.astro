@@ -5,20 +5,18 @@ const { roles } = Astro.props;
 <style>
     ul {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: .5em;
         list-style: none;
         margin: 0;
         padding: 0;
         font-size: .8em;
+        text-transform: uppercase;
+        font-weight: bolder;
     }
 
     li {
-        padding: .25em .5em;
-        border-radius: 100vw;
-        background-color: #fafafa;
-        color: black;
-        border: 1px solid;
+        white-space: pre;
     }
 </style>
 
