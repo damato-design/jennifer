@@ -1,5 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import Float from '@components/Float.astro';
+import Roles from '@components/Roles.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -23,8 +25,34 @@ const { Content } = await render(post);
   margin-block-end: .5em; 
 }
 
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: end;
+  justify-content: center;
+  padding-inline: 15%;
+  color: white;
+}
+
+.things {
+  font-family: "Syncopate", serif;
+  font-weight: bolder;
+}
+
 </style>
 
 <Layout { ...post.data }>
+  <Float>
+    <div class="content" style={{ backgroundColor: post.data.accent }}>
+      <div class="things">
+        <div>{ new Date(post.data.date).getFullYear() }</div>
+      <div>{ post.data.project }</div>
+      </div>
+      <!-- <Roles roles={ post.data.roles }/> -->
+    </div>
+  </Float>
 	<Content/>
 </Layout>

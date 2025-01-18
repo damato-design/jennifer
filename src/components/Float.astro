@@ -1,0 +1,28 @@
+<style>
+    div {
+        /* filter: drop-shadow(0 -12px 4px rgba(0,0,0, .1)); */
+    }
+    
+    aside {
+        margin-block-start: -10%;
+        float: right;
+        shape-outside: url('/shape.svg');
+        shape-margin: 200px;
+        clip-path: url(#shape);
+        display: flex;
+        width: 50%;
+        aspect-ratio: 720/432;
+    }
+</style>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    <clipPath id="shape" clipPathUnits="objectBoundingBox">
+        <path transform="scale(0.00138887, 0.00231481)" d="M504.1 0h-216c-22.7 0-44 10.7-57.6 28.8l-216 288C-21.1 364.3 12.8 432 72.1 432h432c119.3 0 216-96.7 216-216S623.4 0 504.1 0Z"/>
+    </clipPath>
+</svg>
+
+<div>
+    <aside>
+        <slot/>
+    </aside>
+</div>

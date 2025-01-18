@@ -1,23 +1,29 @@
 ---
-import Roles from '@components/Roles.astro'
-const { url, img, title, desc, roles } = Astro.props;
+const { url, img, title, desc, accent } = Astro.props;
+const bgimg = `url(${img})`;
 ---
 
-<style>
+<style define:vars={{ accent }} >
 
     a {
         display: flow-root;
         text-decoration: none;
     }
 
-    img {
-        mask-image: url('shape.svg');
-        mask-size: contain;
-        mask-repeat: no-repeat;
-        float: right;
+    .filter {
+        filter: drop-shadow(12px -12px 0 color-mix(in oklch, var(--accent), transparent 10%));
+    }
+
+    .shape {
+        clip-path: url(#shape);
+        width: 60%;
         shape-outside: url('shape.svg');
         shape-margin: 1rem;
-        width: 70%;
+        float: right;
+        aspect-ratio: 720/432;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .content {
@@ -25,8 +31,16 @@ const { url, img, title, desc, roles } = Astro.props;
     }
 </style>
 
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+    <clipPath id="shape" clipPathUnits="objectBoundingBox">
+        <path transform="scale(0.00138887, 0.00231481)" d="M504.1 0h-216c-22.7 0-44 10.7-57.6 28.8l-216 288C-21.1 364.3 12.8 432 72.1 432h432c119.3 0 216-96.7 216-216S623.4 0 504.1 0Z"/>
+    </clipPath>
+</svg>
+
 <a href={ url }>
-    <img src={ img } />
+    <div class="filter">
+        <div class="shape" style={{ backgroundImage: bgimg }} />
+    </div>
     <div class="content">
         <h2>{ title }</h2>
         <p>{ desc }</p>

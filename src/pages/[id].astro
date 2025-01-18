@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import Float from '@components/Float.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -14,8 +15,21 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const bgimg = `url(${post.data.img})`;
 ---
 
+<style>
+  div {
+    background-position: bottom center;
+    background-size: 70%;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+
 <Layout { ...post.data }>
+  <Float>
+    <div style={{ backgroundImage: bgimg }} />
+  </Float>
 	<Content/>
 </Layout>
