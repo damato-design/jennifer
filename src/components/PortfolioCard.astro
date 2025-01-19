@@ -8,6 +8,7 @@ const bgimg = `url(${img})`;
     a {
         display: flow-root;
         text-decoration: none;
+        position: relative;
     }
 
     .filter {
@@ -28,6 +29,20 @@ const bgimg = `url(${img})`;
 
     .content {
         padding-block: 1rem;
+        position: relative;
+        border-radius: 2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        .filter {
+            position: absolute;
+            inset: 0;
+        }
+
+        .content {
+            background: color-mix(in oklch, white, transparent 10%);
+            max-width: 300px;
+        }
     }
 </style>
 

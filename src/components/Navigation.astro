@@ -21,13 +21,15 @@ const navigation = {
     nav {
         pointer-events: initial;
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         justify-content: space-between;
         align-items: center;
         background-color: color-mix(in oklch, white, transparent 30%);
         backdrop-filter: blur(5px);
-        padding: 1rem 1.5rem;
-        border-radius: 100vw;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        border-radius: 2rem;
         border: 1px solid white;
         /* max-width: min(var(--content-width) - 4rem, 100vw - 4rem); */
     }
