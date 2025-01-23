@@ -7,6 +7,7 @@ const other = defineCollection({
         title: z.string(),
         desc: z.string(),
         accent: z.string(),
+        draft: z.boolean(),
     }),
 });
 
@@ -19,7 +20,8 @@ const work = defineCollection({
         desc: z.string(),
         project: z.string(),
         roles: z.array(z.string()),
-        img: z.string()
+        img: z.string(),
+        draft: z.boolean(),
     }),
 });
 

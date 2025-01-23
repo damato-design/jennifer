@@ -19,7 +19,7 @@ const sorted = work.sort((a: CollectionEntry<'work'>, b: CollectionEntry<'work'>
 
 <Layout { ...about.data }>
 	<div>
-		{ sorted.map((post) => {
+		{ sorted.filter((post) => !post.data.draft).map((post) => {
 			return <PortfolioCard { ...post.data } url={ `/work/${post.slug}` }/>
 		}) }
 	</div>
