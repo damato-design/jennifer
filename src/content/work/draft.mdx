@@ -1,6 +1,6 @@
 ---
 title: Amor Design System
-date: 2021-2025
+date: 2021-Current
 accent: rgb(41, 97, 202)
 desc: Building up a multi-brand design system.
 project: client
@@ -17,58 +17,43 @@ draft: true
 **Amor is a design system designed to deliver consistent and accessible e-commerce experiences at scale across multiple Signet brands.**
 
 
+## The Situation
+
+I joined the team after an agency handed off the initial design system. The original system included foundational elements: colors, typography, spacing, a small set of custom icons, buttons, and some form elements. 
+
 ## My Role
 
-In my role, I focused on *refining the visual language of the design system, creating reusable components in Figma, and collaborating with developers to implement them in Hybris–a cloud-based e-commerce platform*. This also involved designing icons, comprehensive documentation, and outreach.
+In my role, I focused on **refining the visual language of the design system, creating reusable components in Figma, and collaborating with developers** to implement them in Hybris, a cloud-based e-commerce platform. This also involved designing icons, comprehensive documentation, and outreach.
 
-## Steps We Took
 
-We first **interviewed the product owner** to get their user needs. Since this is a relatively small site, we then **prioritized the needs** and were able to cover all of them. We looked over the structure and content of the existing site and use this time to **reorganize and consolidate the site**.
+## The Problems *(we will only address a few)*
 
-The main goal of the site was to get institutions to apply for membership and a secondary goal was to allow current members to access what Membership provided: Community, Directory, Professional Development, Events, Governance, and News.
+Our task was to expand the system while the product designers were simultaneously redesigning the digital products. This led to some overlap and friction in the early stages but was resolved as the design system expanded.
 
-Working with the content strategist, multiple iterations of the design and site map were created as we expanded and contracted to five. We did this because I found that the pages had a lot of duplicative information and as a whole, we were aiming for a leaner site. The final site map:
+The agency handoff had elements that did not meet WCAG standards and so we had to revisit color, typography scales, as well and expand on their form fields as we were building out the system.
 
-![](/images/membership_ia.png)
+##Documentation
+We started on Invisions DSM (RIP), since it was a good place to get the system up and running quickly. As we moved into zeroheight for documentation, which visually was more appealing, but we ran across other issues. 
 
-## Updates in Content and Design
+As we researched and built out componenents, we also worked on documention for them. This was a place for designers to understand design and content guidelines as well as see the component in action in Storybook. 
 
-### Home Page
 
-One of the biggest changes to the site was the home page. **The previous page mainly linked out to other parts of the site or global site, It didn't tell you what Membership was about and what benefits were gained from joining; users had to go to different page to find out about that.** We felt that it was important to highlight it on the homepage to entice the audience to want to learn more and apply right away, instead of having to go to another page to find out more.
+How do you frame the problem in a way so it's like a "Me too"– I have that problem too!
 
-![](/images/membership_d7_home.png)
-![](/images/membership_d8_home.png)
+Things I did
+- Update colors – Hicks law for designers (too many choices), and too many of the colors were not accessible. I updated the neutral tones, and removed one and also updated and expanded the supporting colors to meet the needs of our designers. 
+- Created components based off shared needs from different product 
+  - I audited the new designs being designed while we were working on the system and found some low-hanging fruits. One of them was
+     - Accordion: There were different accordions on the same page, let lone other experiences. It's a lot of information that we didn't necessarily want the user to scroll through, but the business wanted to have on the page. 
 
-## Apply For Membership Page
+Inventory / Inconsistencies
 
-Another page that went through major revisions was the Apply for Membership page. Previously, it provided a lot of information, but it wasn't straightforward, so it left a lot of questions that wasn't easily found anywhere on the site. **The updated page addressed it by making clear steps with bullets on what was needed and what needed to be gathered.** We also included an FAQ section for specific questions that the product owner was asked often enough via email to pull out.
+DSM > zeroheight
+- DSM was great to start off a design system because it was quick to start and was build to have storybook and create tokens all in one place. One of biggest issues that rose as we continued working in DSM was that the formatting was very limited. I struggled a lot working within it's limitations as we were building it out. 
+- When we were demoing different documentation platforms, there were two we landed between: zeroheight & Knapsack. I had wanted to move forward with Knapsack because they felt more customizable and willing to work with you. Zeroheight felt more like the tried and tested solution, and while there were better features than DSM, I felt that they had some set ways and wasn't necessarily going to answer all our issues. 
 
-![](/images/membership_d7_apply.png)
-![](/images/membership_d8_apply.png)
-## Member Savings
+It felt like Sketch vs Figma (back in 2022), where zeroheight was tried and tested and Knapsack was the new kid on the block and was listening more closely to the feedback of their users. 
 
-This was originally the Member Benefits page mentioned above. **Since we moved most of the relevant content to the Home page, we highlighted the Member Savings, since it is still an important benefit of the membership.** We did move it as a sub-section of the benefit on the home page, versus keeping it top-level on the site map.
+Even though I voiced my opinions, leadership decided to move forward with zeroheight since they were more established, and while they are receptive to our feedback, there are still many issues with connectivity we are dealing with now. 
 
-![](/images/membership_d7_benefits.png)
-![](/images/membership_d8_benefits.png)
-
-## Current Member Resources Page
-
-We tried to remove this page, since all the information was also on the home page, however, the product owner felt that it was crucial to have it as a separate page. **In keeping with the leaner site, we kept the page utilitarian and cut a lot of the duplicative information out.**
-
-![](/images/membership_d7_resources.png)
-![](/images/membership_d8_resources.png)
-
-## Youth Advisory Council Page
-
-This page was changed the least, we simplified content and made sure it aligned with the new standards. This page is not part of the main structure because the nature of the program.
-
-![](/images/membership_d7_yac.png)
-![](/images/membership_d8_yac.png)
-
-## Additional Challenges
-
-Since we were in the interim of updating our design system, the pages I designed were in the newer Apricot 4.1. The final site was built in the older Apricot 3.4 and will be updated to the new design system in the near future.
-
-Due to this, the project made me work closely with the global standards team, as they were still working through documentation, we had to sync with members of their team often. We also had to collaborate closely with the web production, as this was a newer process for all of us, to see what was and wasn't possible. We found that D8 was much stricter than D7 so there was a lot less customization possible.
+The problem semantic tokens are solving is the problem of changing expressions of the brand. People have a need for expression and semantic tokens is the mechanism in which we can provide these expressions without changing everything. We are just 'painting' this. Brands want to express themselves in different ways. 
