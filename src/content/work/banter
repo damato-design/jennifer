@@ -1,15 +1,11 @@
 ---
-title: Amor Design System
-date: 2021-Current
+title: Banter 
+date: 2025
 accent: rgb(50, 50, 50)
-desc: Building up a multi-brand design system.
+desc: Getting brand typography compliant.
 project: client
 roles:
-  - UX Design
-  - UI Design
   - Design Systems
-  - User Research
-  - User Testing
 img: /images/Amor_logo.png
 draft: true
 ---
