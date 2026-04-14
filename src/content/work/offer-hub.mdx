@@ -1,93 +1,187 @@
 ---
-title: Offer Hub
+title: Signet Jewelers' Offer Hub
 date: 2025-01-01
 accent: rgb(50, 50, 50)
-desc: Signet Jewelers’ e-commerce experience lacked a strategic, user-friendly way to surface promotions and offers.
+desc: How rethinking where promotions live in the shopping experience turned distraction into intent.
 project: client
 roles:
   - UX Design
   - UI Design
-  - Design Systems
   - User Research
-  - User Testing
-img: /images/Amor_logo.png
+  - AB Testing
+img: /images/OH_Cover.png
 draft: true
 ---
 
-## Context & Background
+# Rethinking Promotions
 
-Signet Jewelers’ e-commerce experience lacked a strategic, user-friendly way to surface promotions and offers. Users encountered fragmented, repetitive offers that doesn’t feel relevant or timely. As a result, **engagement with promotions was low, and customer feedback noted confusion and frustration**.
+**UX Case Study · Signet Jewelers**
 
-## Problem
+---
 
-The brand sites lack a cohesive and strategic approach to displaying promotions and offers, resulting in a fragmented experience for users. Offers were often repeated, generic, and lacked personalization or contextual relevance. 
+## The Problem
 
-Customers weren’t seeing the right deals at the right time, and there was no clear way to revisit some previously seen offers. This led to user frustration and missed engagement opportunities.
+![](/images/OH_Before.png)
+Signet Jeweler's brand sites had a promotions problem... but it wasn't that they had too few offers. It was that the offers were everywhere and nowhere at once.
 
-## Goals
+Banners repeated the same deal multiple times. Promotions appeared with no connection to what the user was actually shopping for. There wasn't a convenient place to discover what was available, and not an easy way to return to an offer you'd seen earlier. The experience felt very noisy.
 
-- Centralizes all types of offers (discount and non-discount)
-- Integrates seamlessly into the shopping journey (except at checkout).
-- Makes promotions easy to discover, understand, and return to.
-- Supports both business conversion and customer satisfaction.
-
-I led the design for a single, consistent destination for site-wide promotions. It addressed the need for user visibility and control over their promotions.
-
-#### Types of offers offered:
-- Discount Offers – Price reductions (e.g., "25% off gold necklaces")
-- Non-Discount Offers – Value-added benefits (e.g., loyalty rewards, free shipping)
-
-## Discovery & Insights
-
-To understand the landscape and define the problem, steps taken:
-- Competitive audit
-- Work with a researcher to test out different comparative experiences
-- Tested 4 different variations of the offer experience
-- Tested 2 updated versions
-
-### Key Takeaways
-
-From the first two rounds of testing, several key themes emerged:
-- **Users seek simplicity in evaluating value:** They don’t want to work hard to figure out which promotion offers the best deal.
-- **Too many options = decision fatigue:** An overload of nuanced offers made it harder for users to choose confidently.
-- **Perceived abundance builds trust:** Having a broad range of offers makes users feel they’ll get a deal no matter what they buy.
-- **Personalization motivates sign-in:** All users expressed a willingness to log in or create an account if it meant receiving more relevant, personalized offers.
-
-Key Takeaway: **Strike a balance between variety and clarity.** Users want choice, but not at the cost of cognitive effort. Streamlining presentation and offering personalization can enhance trust and reduce friction.
-
-### Decisions Made
-
-With the takeaways in mind, I moved forward with:
-- **Users seek simplicity in evaluating value:** Given the US brands implicit nature for their offers, they got the best price and no promo codes are needed
-- **Too many options = decision fatigue:** Hick’s Law highlights this and so I limited the cards in the drawer to 6 offers before users had to link out to all the offers. This reduced cognitive load for those that weren’t deal seekers and for those that were, they would do so at their disposal with moving forward with seeing all the offers.
-- **Perceived abundance builds trust:** As the brands are the ones that are populating the Offer Hub they would prioritize variance of their offers. 
-- **Personalization motivates sign-in:** While everyone was on board to bring this to life, due to constraints, we had to remove it from Phase 1 implementation.
-
-## Design
-
-### Additional Considerations
-- //SE CMS Content
-- Working with Content
-  - During the final stages of the development stage, the Dev Lead noted that it was taking a while for the offers to load. 
-  - With this knowledge, I worked with the content design team and designed screens to provide feedback to our users.
-
-### Additional Testing
-
-In addition to user research, Signet conducts A/B testing as a standard part of validating new features. To assess the impact of a streamlined promotions experience, we tested the Offer Hub on our Kay brand for about a month. 
-
-Performance Highlights:
-- Average Order Value (AOV) increased by **+2.0%**
-- Revenue per Visitor (RPV) increased by **+1.7%**
-
-Based on these results, we were able to proceed with development.
+This fragmentation led to user frustration and missed engagement. Not because there weren't good offers, but because the experience made it hard to find and evaluate.
 
 
-## The Future of Offers
+## The Question
 
-Give the constraints for this MVP, here are a few considerations for future enhancements:
-- Personalization account holders
-- Additional benefits for Loyalty members
-- Additional button to ‘COPY’ a promo code – specific for our UK brands
-- Color exploration for additional emphasis
-- Combination experience with the Offer Page, that is currently owned by each Brand individually
-    - This will allow brand partners to add offers in one experience for both experiences.
+**How might we improve the promotions experience so customers see the right deals at the right time?**
+
+---
+
+## What we set out to build
+
+A single, consistent destination for site-wide promotions; an **Offer Hub** that could handle two types of offers:
+
+- **Discount offers** - price reductions (e.g., 25% off gold necklaces)
+- **Non-discount offers** - value-added benefits (e.g., free shipping, loyalty rewards)
+
+<div style="background:#ffffff;border-radius:16px;padding:2.5rem;margin:2.5rem 0;">
+  <p style="font-size:1.3rem;font-weight:700;color:#1a1a1a;line-height:1.4;margin:0 0 1rem;">The Goal</p>
+  <p style="font-size:1rem;color:#1a1a1a;line-height:1.6;margin:0;">Centralize everything, integrate naturally into the shopping journey, and make offers easy to discover, understand, and return to without interrupting checkout. But how did we get there?</p>
+</div>
+
+---
+
+## Discovery
+
+I didn't start with solutions. I started with questions. Alongside a dedicated researcher, we conducted a competitive audit of retailers then ran multiple rounds of moderated user testing across four concept variations and two refined iterations. 
+![](/images/OH_Analysis.png)
+
+![](/images/OH_Research.png)
+
+Four clear themes emerged:
+
+### Placement matters more than prominence
+
+- Users consistently missed the bottom drawer CTA, with many failing the task entirely without a tooltip
+- The side drawer was the most noticed and the preferred layout, but participants felt the CTA took up too much screen space
+- Most users did not want to be taken to a new page to see offers, feeling it broke their shopping flow
+
+**The recurring ask: make it accessible without making it intrusive**
+
+### Too many offers erodes trust
+
+- Most participants felt 4 to 6 offers was the right range — enough variety without feeling overwhelming
+- Beyond that, perception shifted: too many promotions made the brand feel like it was struggling, or made individual offers feel less valuable
+- Participants described seeing too many promotions as a signal that a brand "isn't doing well or is trying to get rid of inventory"
+
+**When everything is a deal, nothing feels like one**
+
+### Simplicity and clarity build confidence
+
+- Users gravitated toward experiences that showed specific items, clear price differences, and straightforward value
+- They did not want to compare, stack, or manually apply promo codes
+
+**Show me the best price upfront, automatically**
+
+### Personalization is a meaningful motivator
+
+- Nearly all participants said they would log in or create an account in exchange for more relevant, personalized offers
+- However, most missed existing sign-in prompts during testing entirely, signaling the prompt itself needed more visibility
+
+**Personalization was seen as a reason to engage with the brand more, not just the offer**
+
+<div style="background:#ffffff;border-radius:16px;padding:2.5rem;margin:2.5rem 0;">
+  <p style="font-size:1.3rem;font-weight:700;color:#1a1a1a;line-height:1.4;margin:0 0 1rem;">The Main Takaways</p>
+  <p style="font-size:1rem;color:#1a1a1a;line-height:1.6;margin:0;">Users want access to a range of offers, but on their own terms. The experience needs to be easy to find, easy to understand, and easy to trust, without interrupting why they came to the site in the first place.</p>
+</div>
+
+---
+## From insight to decision
+
+Here's how each finding shaped the design:
+
+### Placement: iterate on the side drawer, reduce the footprint
+![](/images/OH_Process1.png)
+
+Research confirmed the side drawer as the preferred format, but called for a less prominent, more collapsible entry point. The final design retained the side drawer layout while exploring ways to make the CTA feel less like it was competing with the shopping experience
+
+### Number of offers: cap at 6, give power users a path forward
+
+Testing pointed to 4 to 6 as the sweet spot, with 10 or more crossing into overwhelming territory. We capped the visible drawer at 6 offers with a clear "see all" option for deal-seekers who wanted to go deeper. 
+
+This respected the casual browser without cutting off the intentional one
+
+### Simplicity: lean into the implicit best price model
+
+Signet's US brands already operate without promo codes, automatically applying the best price. Research reinforced this: users didn't want to hunt, compare, or do the math. We leaned into that by removing friction rather than adding explanation
+
+
+### Personalization: design for it, ship without it
+![](/images/OH_Process2.png)
+
+The appetite was clear and consistent across participants, but constraints meant it had to wait. 
+---
+![](/images/OH_CMS.png)
+*Note: Because this was a CMS-powered experience, the work included designing the brand-partner-facing CMS view - not just the consumer-facing UI.*
+
+---
+## From Experiment to Evidence
+
+We were taking promotions that lived in highly visible, prominent placements and moving them into a drawer. 
+
+What followed was two rounds of validations, one controlled and one real-world.
+
+### Stage 1 · A/B test
+
+*~1 month on Kay Jewelers · Controlled split test · Oct 2024*
+
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1.5rem 0;">
+  <div style="border:1.5px solid #e0e0e0;border-radius:12px;padding:1.5rem;">
+    <div style="font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:#888;margin-bottom:0.5rem;">Add-to-cart rate</div>
+    <div style="font-size:2.25rem;font-weight:700;color:#232323;line-height:1;">↑</div>
+  </div>
+  <div style="border:1.5px solid #e0e0e0;border-radius:12px;padding:1.5rem;">
+    <div style="font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:#888;margin-bottom:0.5rem;">Average order value</div>
+    <div style="font-size:2.25rem;font-weight:700;color:#232323;line-height:1;">+2.0%</div>
+  </div>
+  <div style="border:1.5px solid #e0e0e0;border-radius:12px;padding:1.5rem;">
+    <div style="font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:#888;margin-bottom:0.5rem;">Revenue per visitor</div>
+    <div style="font-size:2.25rem;font-weight:700;color:#232323;line-height:1;">+1.7%</div>
+  </div>
+</div>
+
+These results were enough to greenlight full development. The hypothesis held, now we needed to prove it at scale.
+
+### Stage 2 · Post-launch
+
+*Real-world traffic · Full implementation across Kay · Feb 2025*
+
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0;">
+  <div style="border:1.5px solid #aaa;border-radius:12px;padding:1.5rem;">
+    <div style="font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:#666;margin-bottom:0.5rem;">Clickthrough rate</div>
+    <div style="font-size:2.25rem;font-weight:700;color:#232323;line-height:1;">−59%</div>
+  </div>
+  <div style="border:1.5px solid #aaa;border-radius:12px;padding:1.5rem;">
+    <div style="font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:#666;margin-bottom:0.5rem;">Revenue per visitor</div>
+    <div style="font-size:2.25rem;font-weight:700;color:#232323;line-height:1;">+5%</div>
+  </div>
+</div>
+
+The hypothesis didn't just survive contact with reality... it got stronger. A 59% drop in clicks alongside rising revenue isn't a tradeoff. It's proof that the clicks we lost were never doing the work we thought they were.
+
+<div style="background:#1a1a1a;border-radius:16px;padding:2.5rem;margin:2.5rem 0;">
+  <p style="font-size:1.5rem;font-weight:700;color:#ffffff;line-height:1.4;margin:0 0 1rem;">The drawer didn't kill engagement. It killed distraction.</p>
+  <p style="font-size:1rem;color:#aaaaaa;line-height:1.6;margin:0;">Not every drop in clicks is a loss. Sometimes it's focus.</p>
+</div>
+
+This permanently reframed how the team thinks about engagement metrics. Clickthrough rate, long treated as a proxy for interest, turned out to be measuring noise as much as intent. Revenue per visitor told a different story entirely.
+
+![](/images/OH_Final.png)
+
+## What's next
+
+This was an MVP. The foundation is built, here's where it goes from here:
+
+- **Personalization for account holders** - the most-requested feature
+- **Enhanced loyalty benefits** - deeper rewards for members
+- **Promo code copy functionality** - a key addition for Signet's UK brands
+- **Color exploration** - visual emphasis to surface priority offers
+- **Integration with brand-owned offer pages** - consolidating the CMS so brand partners manage both surfaces in one place, reducing duplication and improving consistency

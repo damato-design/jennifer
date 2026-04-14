@@ -1,0 +1,4750 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "mGw6L",
+      "x": -504.27407226562536,
+      "y": -1183.9841766357422,
+      "name": "Reference",
+      "clip": true,
+      "width": 1440,
+      "fill": "#ffffffff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "vertical",
+      "padding": [
+        0,
+        48
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "9dy0R",
+          "name": "Personal or Agency Website Header",
+          "width": "fill_container",
+          "fill": "#ffffffff",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1.5
+            }
+          },
+          "gap": 24,
+          "padding": [
+            20,
+            0
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "TgiEp",
+              "name": "logo{-appType}",
+              "height": 48,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1.5
+              },
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qoL56",
+                  "name": "JD 1",
+                  "clip": true,
+                  "width": 56,
+                  "height": 41.4200325012207,
+                  "fill": {
+                    "type": "color",
+                    "color": "#ffffffff",
+                    "enabled": false
+                  },
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "path",
+                      "id": "wkdLs",
+                      "x": -0.014059753157198429,
+                      "y": 0.04217926040291786,
+                      "name": "Vector",
+                      "geometry": "M7.41 0.68l0-0.68 14.94 0 1.01 0.08 0 0.6c-4.28 0.16-4 0.76-4 8.68l0 9.84c0 6.04-2.64 10.24-11.4 10.24-4.92 0-7.96-2.64-7.96-5.8 0-2.48 1.64-4.64 4.4-4.64 2.76 0 4.36 1.92 4.36 4.48 0 2.96-2.96 4.88-6 3.52 0.88 0.88 2.44 1.64 4.44 1.64 2.84 0 4.2-1.76 4.2-5.12l0-14.16c0-7.92 0.28-8.52-4-8.68l0.01 0z",
+                      "fill": "#551936ff",
+                      "width": 32.84358596801758,
+                      "height": 41.39191436767578,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "id": "Uyh8X",
+                      "x": 25.785587310791016,
+                      "y": -0.007340428419411182,
+                      "name": "Vector",
+                      "geometry": "M0 28.95522l3.21 0c11.32 0.13 18.28-5.1 18.28-14.62 0-9.52-6.96-14.52-18.27-14.33l-1.21 0.02c0 0.31 0.39 0.73 0.39 1.04 0 0 1.01-0.39 2.47-0.3 0.35 0.02 0.59 0.08 0.88 0.15 4.3 0.97 7.7 5.37 7.7 13.48 0 6.74-2.6 11.13-6.23 12.82-0.74 0.35-1.52 0.53-2.34 0.69",
+                      "fill": "#551936ff",
+                      "width": 30.214412689208984,
+                      "height": 40.71365737915039,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "LgNgo",
+              "name": "pageLinks",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "gap": 40,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oFQv0",
+                  "name": "pageLink1",
+                  "fill": "#551936ff",
+                  "content": "Work",
+                  "lineHeight": 1.1428571428571428,
+                  "fontFamily": "Abhaya Libre SemiBold",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.56
+                },
+                {
+                  "type": "text",
+                  "id": "mCma4",
+                  "name": "pageLink2",
+                  "fill": "#551936ff",
+                  "content": "About",
+                  "lineHeight": 1.1428571428571428,
+                  "fontFamily": "Abhaya Libre SemiBold",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.56
+                },
+                {
+                  "type": "text",
+                  "id": "IFXuC",
+                  "name": "pageLink3",
+                  "fill": "#551936ff",
+                  "content": "Resume",
+                  "lineHeight": 1.1428571428571428,
+                  "fontFamily": "Abhaya Libre SemiBold",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.56
+                },
+                {
+                  "type": "text",
+                  "id": "AOo7c",
+                  "name": "pageLink4",
+                  "fill": "#551936ff",
+                  "content": "Contact",
+                  "lineHeight": 1.1428571428571428,
+                  "fontFamily": "Abhaya Libre SemiBold",
+                  "fontSize": 28,
+                  "fontWeight": "normal",
+                  "letterSpacing": -0.56
+                }
+              ]
+            },
+            {
+              "type": "path",
+              "id": "jtiSc",
+              "layoutPosition": "absolute",
+              "x": -80,
+              "y": 88,
+              "name": "divider",
+              "geometry": "M0 0l111 0",
+              "width": 1504,
+              "height": 0,
+              "stroke": {
+                "align": "center",
+                "thickness": 1.5,
+                "fill": "#ffffff00"
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "X6dEv",
+          "name": "Container",
+          "width": 1075,
+          "height": 3535,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#00000040",
+            "offset": {
+              "x": 0,
+              "y": 4
+            },
+            "blur": 3.5
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "agQwZ",
+              "x": 0,
+              "y": 0,
+              "name": "Main Content",
+              "width": 1075,
+              "height": 3535,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oCjT4",
+                  "x": 0,
+                  "y": 3029,
+                  "name": "Landing Page Testimonial Carousel",
+                  "width": 1075,
+                  "fill": "#551936ff",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "bottom": 1.5
+                    }
+                  },
+                  "layout": "vertical",
+                  "gap": 52,
+                  "padding": [
+                    52,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tZp9j",
+                      "name": "featureDescription",
+                      "fill": "#ffffffff",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "What Clients Say",
+                      "lineHeight": 1.0833333333333333,
+                      "textAlign": "center",
+                      "fontFamily": "Roboto Serif",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.96
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7amtx",
+                      "name": "testimonialCards",
+                      "clip": true,
+                      "width": "fill_container",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "gap": 32,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "AeqcS",
+                          "name": "testimonialCard",
+                          "clip": true,
+                          "width": 288,
+                          "fill": "#ffffff1a",
+                          "cornerRadius": 22,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "#ffffff26"
+                          },
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "QAUTF",
+                              "name": "Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "MFlGX",
+                                  "name": "profile",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "cornerRadius": 999,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "mWsrE",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "A professional individual with a thoughtful expression, providing feedback",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "image-import-246.png",
+                                        "mode": "fill"
+                                      },
+                                      "cornerRadius": 999,
+                                      "stroke": {
+                                        "align": "inside",
+                                        "thickness": 1.5,
+                                        "fill": "#00000000"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "ze9dQ",
+                                  "name": "textContent",
+                                  "width": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "MjwGP",
+                                      "name": "name",
+                                      "fill": "#ffffffff",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Alistair McGregor",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "700",
+                                      "letterSpacing": -0.075
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "JiU1T",
+                                      "name": "title",
+                                      "fill": "#ebd5d19e",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "CEO, TechCorp",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "letterSpacing": -0.075
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "KqhHi",
+                              "name": "Quote Container",
+                              "opacity": 0.800000011920929,
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "padding": [
+                                0,
+                                0,
+                                10,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "xcKZN",
+                                  "name": "Line Container",
+                                  "width": 48,
+                                  "height": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "sXSnk",
+                                      "name": "line",
+                                      "geometry": "M0 0l0 43",
+                                      "width": 0,
+                                      "height": "fill_container",
+                                      "stroke": {
+                                        "align": "center",
+                                        "thickness": 1.5,
+                                        "fill": "#b6979133"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "agA4D",
+                                  "name": "name",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Jennifer's design work is top-notch. Our website's user engagement has increased significantly.",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "hQvgE",
+                          "name": "testimonialCard",
+                          "clip": true,
+                          "width": 288,
+                          "fill": "#ffffff1a",
+                          "cornerRadius": 22,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "#ffffff26"
+                          },
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "AtIa9",
+                              "name": "Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "T5v6B",
+                                  "name": "profile",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "cornerRadius": 999,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "cq5Dr",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "A woman with long dark hair and glasses, dressed in a business casual attire, looking focused and thoughtful",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "image-import-222.png",
+                                        "mode": "fill"
+                                      },
+                                      "cornerRadius": 999,
+                                      "stroke": {
+                                        "align": "inside",
+                                        "thickness": 1.5,
+                                        "fill": "#00000000"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Cupws",
+                                  "name": "textContent",
+                                  "width": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "eQTkz",
+                                      "name": "name",
+                                      "fill": "#ffffffff",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Lydia Chen",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "700",
+                                      "letterSpacing": -0.075
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "xEO2R",
+                                      "name": "title",
+                                      "fill": "#ebd5d19e",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Marketing Director, GreenLeaf",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "letterSpacing": -0.075
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "GAHcU",
+                              "name": "Quote Container",
+                              "opacity": 0.800000011920929,
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "padding": [
+                                0,
+                                0,
+                                10,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "80niz",
+                                  "name": "Line Container",
+                                  "width": 48,
+                                  "height": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "vukjZ",
+                                      "name": "line",
+                                      "geometry": "M0 0l0 43",
+                                      "width": 0,
+                                      "height": "fill_container",
+                                      "stroke": {
+                                        "align": "center",
+                                        "thickness": 1.5,
+                                        "fill": "#b6979133"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "6x3bG",
+                                  "name": "name",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "The branding Jennifer created for us perfectly captures our company's ethos.",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uDvVl",
+                          "name": "testimonialCard",
+                          "clip": true,
+                          "width": 288,
+                          "fill": "#ffffff1a",
+                          "cornerRadius": 22,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "#ffffff26"
+                          },
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "8chaa",
+                              "name": "Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "meDZ0",
+                                  "name": "profile",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "cornerRadius": 999,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "y8Ra7",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "A person with a focused expression and creative demeanor",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "image-import-238.png",
+                                        "mode": "fill"
+                                      },
+                                      "cornerRadius": 999,
+                                      "stroke": {
+                                        "align": "inside",
+                                        "thickness": 1.5,
+                                        "fill": "#00000000"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "xbZiu",
+                                  "name": "textContent",
+                                  "width": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Mk1EG",
+                                      "name": "name",
+                                      "fill": "#ffffffff",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Marcus Aurelius",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "700",
+                                      "letterSpacing": -0.075
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "v9EPC",
+                                      "name": "title",
+                                      "fill": "#ebd5d19e",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Founder, Roman Ventures",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "letterSpacing": -0.075
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "bR5rl",
+                              "name": "Quote Container",
+                              "opacity": 0.800000011920929,
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "padding": [
+                                0,
+                                0,
+                                10,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "zWtxL",
+                                  "name": "Line Container",
+                                  "width": 48,
+                                  "height": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "mwvEg",
+                                      "name": "line",
+                                      "geometry": "M0 0l0 43",
+                                      "width": 0,
+                                      "height": "fill_container",
+                                      "stroke": {
+                                        "align": "center",
+                                        "thickness": 1.5,
+                                        "fill": "#b6979133"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "S81dw",
+                                  "name": "name",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Jennifer's attention to detail and creativity is unmatched. Highly recommended!",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "EjsIm",
+                          "name": "testimonialCard",
+                          "clip": true,
+                          "width": 288,
+                          "fill": "#ffffff1a",
+                          "cornerRadius": 22,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "#ffffff26"
+                          },
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Xycwv",
+                              "name": "Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "xAw4R",
+                                  "name": "profile",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "cornerRadius": 999,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "AyfFg",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "A woman with a confident smile",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "image-import-229.png",
+                                        "mode": "fill"
+                                      },
+                                      "cornerRadius": 999,
+                                      "stroke": {
+                                        "align": "inside",
+                                        "thickness": 1.5,
+                                        "fill": "#00000000"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "pqGuW",
+                                  "name": "textContent",
+                                  "width": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "aH3Jl",
+                                      "name": "name",
+                                      "fill": "#ffffffff",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Sophia Patel",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "700",
+                                      "letterSpacing": -0.075
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "jVCb3",
+                                      "name": "title",
+                                      "fill": "#ebd5d19e",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "COO, Urban Eats",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "letterSpacing": -0.075
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "psjKC",
+                              "name": "Quote Container",
+                              "opacity": 0.800000011920929,
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "padding": [
+                                0,
+                                0,
+                                10,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "X2cGu",
+                                  "name": "Line Container",
+                                  "width": 48,
+                                  "height": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "1iuu7",
+                                      "name": "line",
+                                      "geometry": "M0 0l0 43",
+                                      "width": 0,
+                                      "height": "fill_container",
+                                      "stroke": {
+                                        "align": "center",
+                                        "thickness": 1.5,
+                                        "fill": "#b6979133"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "YYl11",
+                                  "name": "name",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Working with Jennifer has been a game-changer for our business.",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "X7VRD",
+                          "name": "testimonialCard",
+                          "clip": true,
+                          "width": 288,
+                          "fill": "#ffffff1a",
+                          "cornerRadius": 22,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "#ffffff26"
+                          },
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "I6rHa",
+                              "name": "Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "btIOf",
+                                  "name": "profile",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "cornerRadius": 999,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "bZfdu",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "A man with a serious expression, neatly groomed, wearing glasses, and a formal shirt",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "image-import-223.png",
+                                        "mode": "fill"
+                                      },
+                                      "cornerRadius": 999,
+                                      "stroke": {
+                                        "align": "inside",
+                                        "thickness": 1.5,
+                                        "fill": "#00000000"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "Kglgl",
+                                  "name": "textContent",
+                                  "width": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "Ing5S",
+                                      "name": "name",
+                                      "fill": "#ffffffff",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Ethan Hunt",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "700",
+                                      "letterSpacing": -0.075
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "H72Pf",
+                                      "name": "title",
+                                      "fill": "#ebd5d19e",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "CTO, Mission Tech",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "letterSpacing": -0.075
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "k0cNW",
+                              "name": "Quote Container",
+                              "opacity": 0.800000011920929,
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "padding": [
+                                0,
+                                0,
+                                10,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "SH6li",
+                                  "name": "Line Container",
+                                  "width": 48,
+                                  "height": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "TPDqR",
+                                      "name": "line",
+                                      "geometry": "M0 0l0 43",
+                                      "width": 0,
+                                      "height": "fill_container",
+                                      "stroke": {
+                                        "align": "center",
+                                        "thickness": 1.5,
+                                        "fill": "#b6979133"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "kAfeM",
+                                  "name": "name",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Jennifer's designs are not only beautiful but also highly functional.",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "huJgU",
+                          "name": "testimonialCard",
+                          "clip": true,
+                          "width": 288,
+                          "fill": "#ffffff1a",
+                          "cornerRadius": 22,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "#ffffff26"
+                          },
+                          "layout": "vertical",
+                          "gap": 20,
+                          "padding": 32,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Rv0xd",
+                              "name": "Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "UwAIz",
+                                  "name": "profile",
+                                  "clip": true,
+                                  "width": 48,
+                                  "height": 48,
+                                  "cornerRadius": 999,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "none",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "ZbZx1",
+                                      "x": 0,
+                                      "y": 0,
+                                      "name": "A woman with long dark hair standing in front of a vibrant abstract painting",
+                                      "clip": true,
+                                      "width": 48,
+                                      "height": 48,
+                                      "fill": {
+                                        "type": "image",
+                                        "enabled": true,
+                                        "url": "image-import-235.png",
+                                        "mode": "fill"
+                                      },
+                                      "cornerRadius": 999,
+                                      "stroke": {
+                                        "align": "inside",
+                                        "thickness": 1.5,
+                                        "fill": "#00000000"
+                                      },
+                                      "layout": "none"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "SnWN5",
+                                  "name": "textContent",
+                                  "width": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "pa0sO",
+                                      "name": "name",
+                                      "fill": "#ffffffff",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Isabella Garcia",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "700",
+                                      "letterSpacing": -0.075
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "W4CLF",
+                                      "name": "title",
+                                      "fill": "#ebd5d19e",
+                                      "textGrowth": "fixed-width",
+                                      "width": "fill_container",
+                                      "content": "Creative Director, Artify",
+                                      "lineHeight": 1.3333333333333333,
+                                      "fontFamily": "Public Sans",
+                                      "fontSize": 15,
+                                      "fontWeight": "normal",
+                                      "letterSpacing": -0.075
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "YMege",
+                              "name": "Quote Container",
+                              "opacity": 0.800000011920929,
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "gap": 12,
+                              "padding": [
+                                0,
+                                0,
+                                10,
+                                0
+                              ],
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "uY4cx",
+                                  "name": "Line Container",
+                                  "width": 48,
+                                  "height": "fill_container",
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 1
+                                  },
+                                  "layout": "vertical",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "path",
+                                      "id": "v1EVP",
+                                      "name": "line",
+                                      "geometry": "M0 0l0 43",
+                                      "width": 0,
+                                      "height": "fill_container",
+                                      "stroke": {
+                                        "align": "center",
+                                        "thickness": 1.5,
+                                        "fill": "#b6979133"
+                                      }
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "i5EKu",
+                                  "name": "name",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Jennifer is a true professional. Her work has exceeded our expectations.",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "rectangle",
+                      "id": "eOC7z",
+                      "layoutPosition": "absolute",
+                      "x": 1075,
+                      "y": 0,
+                      "name": "Bleed",
+                      "flipX": true,
+                      "width": 96,
+                      "height": 506,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      }
+                    },
+                    {
+                      "type": "path",
+                      "id": "Hnxkc",
+                      "layoutPosition": "absolute",
+                      "x": -96,
+                      "y": 505.999755859375,
+                      "name": "divider",
+                      "geometry": "M0 0l111 0",
+                      "width": 1267,
+                      "height": 0,
+                      "stroke": {
+                        "align": "center",
+                        "thickness": 1.5,
+                        "fill": "#ffffff00"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z1tgL",
+                  "x": 0,
+                  "y": 2585,
+                  "name": "Personal or Agency Website Impact Metrics Section",
+                  "width": 1075,
+                  "height": 444,
+                  "fill": "#551936ff",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "gap": 52,
+                  "padding": [
+                    52,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5p4gW",
+                      "name": "tagline",
+                      "fill": "#ffffffff",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Impact Metrics",
+                      "lineHeight": 1.1428571428571428,
+                      "fontFamily": "Roboto Serif",
+                      "fontSize": 28,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.56
+                    },
+                    {
+                      "type": "frame",
+                      "id": "56BLg",
+                      "name": "Main Container",
+                      "width": "fill_container",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "5RRie",
+                          "name": "Row Container",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "gap": 52,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "zak0p",
+                              "name": "Stat Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": {
+                                  "top": 1.5
+                                },
+                                "fill": "#b6979133"
+                              },
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": [
+                                32,
+                                0,
+                                52,
+                                0
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Jon8Y",
+                                  "name": "stat",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "200+",
+                                  "lineHeight": 1.0833333333333333,
+                                  "fontFamily": "Roboto Serif",
+                                  "fontSize": 48,
+                                  "fontWeight": "700",
+                                  "letterSpacing": -0.96
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ytXzG",
+                                  "name": "stat description",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Projects Completed",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "DF6ud",
+                              "name": "Stat Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": {
+                                  "top": 1.5
+                                },
+                                "fill": "#b6979133"
+                              },
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": [
+                                32,
+                                0,
+                                52,
+                                0
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "733dj",
+                                  "name": "stat",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "150+",
+                                  "lineHeight": 1.0833333333333333,
+                                  "fontFamily": "Roboto Serif",
+                                  "fontSize": 48,
+                                  "fontWeight": "700",
+                                  "letterSpacing": -0.96
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "wzT9I",
+                                  "name": "stat description",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Happy Clients",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Q0pWm",
+                          "name": "Row Container",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "gap": 52,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "XANJo",
+                              "name": "Stat Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": {
+                                  "top": 1.5
+                                },
+                                "fill": "#b6979133"
+                              },
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": [
+                                32,
+                                0,
+                                52,
+                                0
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "OzFCg",
+                                  "name": "stat",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "10",
+                                  "lineHeight": 1.0833333333333333,
+                                  "fontFamily": "Roboto Serif",
+                                  "fontSize": 48,
+                                  "fontWeight": "700",
+                                  "letterSpacing": -0.96
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "J3Hit",
+                                  "name": "stat description",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Years of Experience",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "t5ixZ",
+                              "name": "Stat Container",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": {
+                                  "top": 1.5
+                                },
+                                "fill": "#b6979133"
+                              },
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": [
+                                32,
+                                0,
+                                52,
+                                0
+                              ],
+                              "justifyContent": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Bpq6B",
+                                  "name": "stat",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "30+",
+                                  "lineHeight": 1.0833333333333333,
+                                  "fontFamily": "Roboto Serif",
+                                  "fontSize": 48,
+                                  "fontWeight": "700",
+                                  "letterSpacing": -0.96
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "P84w6",
+                                  "name": "stat description",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Industry Awards",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kix0r",
+                  "x": 0,
+                  "y": 1378,
+                  "name": "Personal or Agency Website Nine Project Overview Collage",
+                  "width": 1075,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "bottom": 1.5
+                    }
+                  },
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fSSdx",
+                      "name": "row1",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#ffffffff",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "gap": 52,
+                      "padding": [
+                        52,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pGuIM",
+                          "name": "Project1",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "YE4RP",
+                              "name": "A sleek and modern user interface design with a minimalist layout and vibrant color scheme",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-38.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "kFZ36",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "hlVPv",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Alpha",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "SzrIL",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "UI/UX Design",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "y8co5",
+                          "name": "Project2",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "QEPZM",
+                              "name": "A sleek and modern branding concept displayed in a vibrant color palette",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-57.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "EJdkm",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "D5QRf",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Beta",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "MUpjz",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Branding",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "O3Lfn",
+                          "name": "Project3",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "e4dzE",
+                              "name": "A website layout design displayed on a computer screen",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-84.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "s8VY9",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "uVt7x",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Gamma",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Qw43u",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Web Development",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gfH25",
+                      "name": "row2",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#ffffffff",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "gap": 52,
+                      "padding": [
+                        0,
+                        0,
+                        52,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "gIM10",
+                          "name": "Project4",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "8y0ab",
+                              "name": "A smartphone displaying a sleek and modern mobile app interface",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-11.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "pFf1z",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "9V9kQ",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Delta",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "J4ZRR",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Mobile App",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "sJy7L",
+                          "name": "Project5",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "qidxp",
+                              "name": "A vibrant digital artwork featuring intricate graphic design elements",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-151.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "FH9V8",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Ejeuv",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Epsilon",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "n00QF",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Graphic Design",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "3QtIq",
+                          "name": "Project6",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "TPCWz",
+                              "name": "A sleek and contemporary website design featuring clean lines and vibrant colors",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-89.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "HzgdA",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "GHKLE",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Zeta",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "lqmjO",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Marketing",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wyBYh",
+                      "name": "row3",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#ffffffff",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "gap": 52,
+                      "padding": [
+                        0,
+                        0,
+                        52,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "RlCkO",
+                          "name": "Project7",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "a9vyd",
+                              "name": "A sleek and modern user interface design with innovative UI/UX elements",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-27.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "UpfL7",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "eguGy",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Eta",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "qq3d9",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "UI/UX Design",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "7YEea",
+                          "name": "Project8",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Ty1vA",
+                              "name": "A sleek and modern logo design displayed prominently",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-9.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "4CRa4",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ZOEBV",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Theta",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "nzViY",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Branding",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "6Bbzn",
+                          "name": "Project9",
+                          "width": "fill_container",
+                          "height": 333,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          },
+                          "layout": "vertical",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "plCwu",
+                              "name": "A person coding a website on a laptop",
+                              "clip": true,
+                              "width": "fill_container",
+                              "height": "fill_container",
+                              "fill": {
+                                "type": "image",
+                                "enabled": true,
+                                "url": "image-import-51.png",
+                                "mode": "fill"
+                              },
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1.5,
+                                "fill": "#00000000"
+                              },
+                              "layout": "none"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "zNNn0",
+                              "name": "Text content",
+                              "width": "fill_container",
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1
+                              },
+                              "layout": "vertical",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "eMpsi",
+                                  "name": "projectTitle",
+                                  "fill": "#ffffffff",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Project Iota",
+                                  "lineHeight": 1.2,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 20,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "1HGOH",
+                                  "name": "tag",
+                                  "fill": "#ebd5d19e",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Web Development",
+                                  "lineHeight": 1.411764705882353,
+                                  "fontFamily": "Public Sans",
+                                  "fontSize": 17,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": -0.085
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nHvBs",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Portfolio About Section",
+                  "clip": true,
+                  "width": 1075,
+                  "fill": "#ffffffff",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": {
+                      "bottom": 1.5
+                    }
+                  },
+                  "layout": "vertical",
+                  "gap": 96,
+                  "padding": [
+                    96,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6sqdO",
+                      "name": "tagline",
+                      "fill": "#551936ff",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I'm Jennifer, a product designer who enjoys the process of problem solving and turning ideas into reality in an accessible and systematic way.",
+                      "lineHeight": 1.1666666666666667,
+                      "fontFamily": "Abhaya Libre ExtraBold",
+                      "fontSize": 48,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.96
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZaOdk",
+                      "name": "A San Francisco-based designer working on a digital design project",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 810,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "image-import-12.png",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 22,
+                      "layout": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aUeSV",
+          "name": "Personal Website Footer",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#551936ff",
+          "stroke": {
+            "align": "outside",
+            "thickness": {
+              "top": 1.5
+            }
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            96,
+            0,
+            32,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "iLIJP",
+              "name": "Container",
+              "width": "fill_container",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "gap": 750,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PquZZ",
+                  "name": "pageLinks",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1
+                  },
+                  "gap": 40,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DOx46",
+                      "name": "pageLink1",
+                      "fill": "#ebd5d19e",
+                      "content": "© 2026 Jennifer D'Amato",
+                      "lineHeight": 1.1428571428571428,
+                      "fontFamily": "Roboto Serif",
+                      "fontSize": 28,
+                      "fontWeight": "normal",
+                      "letterSpacing": -0.56
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q0sYH",
+                  "name": "buttonLarge",
+                  "cornerRadius": 22,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.5,
+                    "fill": "#b6979133"
+                  },
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3AaaQ",
+                      "name": "Label",
+                      "fill": "#ffffffff",
+                      "content": "Contact Me",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Public Sans",
+                      "fontSize": 20,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rectangle",
+      "id": "q2qR2",
+      "x": -4122.6,
+      "y": 4561,
+      "name": "Screen Shot 2024-07-04 at 3.03.23 PM",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-244.png",
+        "mode": "fill"
+      },
+      "width": 302,
+      "height": 374,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "dx4PW",
+      "x": -3780.6000000000004,
+      "y": 4111,
+      "name": "Screen Shot 2024-07-04 at 3.03.05 PM",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-195.png",
+        "mode": "fill"
+      },
+      "width": 1263,
+      "height": 824,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "text",
+      "id": "EtBVE",
+      "x": -4124.6,
+      "y": 4951,
+      "name": "https://lolajiang.com/teambition.html",
+      "fill": "#ffffffff",
+      "content": "https://lolajiang.com/teambition.html",
+      "fontFamily": "Inter",
+      "fontSize": 12,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "rectangle",
+      "id": "o3hOv",
+      "x": -2027.6000000000004,
+      "y": -1366,
+      "name": "create a colorful background gradient with yellow, magenta, and orange in an organic form\n",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-7.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "6DY3w",
+      "x": -1465.6000000000004,
+      "y": -1366,
+      "name": "a background image with magenta, yellow, and teal with a modern shaped element",
+      "fill": [
+        "#ffffffff",
+        "#ffffffff",
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-175.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "CSyWr",
+      "x": -3703.6000000000004,
+      "y": -779,
+      "name": "a background image with magenta, yellow, and teal with a modern circular element",
+      "fill": [
+        "#ffffffff",
+        "#ffffffff",
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-14.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "46rzc",
+      "x": -3699.6000000000004,
+      "y": -1366,
+      "name": "a background image with magenta, yellow, and orange with a modern circular element",
+      "fill": [
+        "#ffffffff",
+        "#ffffffff",
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-155.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "3N80n",
+      "x": -3141.6000000000004,
+      "y": 982,
+      "name": "a background image with magenta, yellow, and orange with a modern circular element",
+      "fill": [
+        "#ffffffff",
+        "#ffffffff",
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-133.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "ydVVg",
+      "x": -2629.6000000000004,
+      "y": 907,
+      "name": "a background image with magenta, yellow, and orange with a modern circle element",
+      "rotation": 179.99999499104388,
+      "fill": [
+        "#ffffffff",
+        "#ffffffff",
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-159.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "12AHE",
+      "x": -3141.6000000000004,
+      "y": -192,
+      "name": "a background image with magenta, yellow, and teal with a modern circle element",
+      "fill": [
+        "#ffffffff",
+        "#ffffffff",
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-108.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "WEJJr",
+      "x": -3137.6000000000004,
+      "y": -761,
+      "name": "a large background with bold colors of magenta, yellow and teal gradients with an character designing on a laptop\n",
+      "fill": [
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-177.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "UNwux",
+      "x": -3137.6000000000004,
+      "y": -1366,
+      "name": "a large background with bold colors of magenta, yellow and teal gradients with an character designing on a laptop\n",
+      "fill": [
+        "#ffffffff",
+        {
+          "type": "image",
+          "enabled": true,
+          "url": "image-import-197.png",
+          "mode": "fit"
+        }
+      ],
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "EpWwu",
+      "x": -2575.6000000000004,
+      "y": 982,
+      "name": "a large background with bold colors of magenta, yellow and teal gradients in a mushroom cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-2.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "zIt7g",
+      "x": -1465.6000000000004,
+      "y": 395,
+      "name": "a large background with bold colors of magenta, yellow and teal gradients in a mushroom cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-218.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "zjU3E",
+      "x": -2009.6000000000004,
+      "y": 395,
+      "name": "a large background with bold colors of magenta, yellow and teal gradients in a cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-97.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "kQALA",
+      "x": -2575.6000000000004,
+      "y": 395,
+      "name": "a large background with bold colors of magenta, yellow and teal gradients in a cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-124.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "tThP5",
+      "x": -1465.6000000000004,
+      "y": -192,
+      "name": "a large background with bold colors of magenta, yellow and red-orange gradients in a cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-141.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "XM9uF",
+      "x": -2009.6000000000004,
+      "y": -192,
+      "name": "a large background with bold colors of magenta, yellow and red-orange gradients in a cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-198.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "SK726",
+      "x": -2575.6000000000004,
+      "y": -192,
+      "name": "a large background with magenta, yellow and orange gradients in a organic cloud-like design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-90.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "4o0xn",
+      "x": -1465.6000000000004,
+      "y": -761,
+      "name": "a large background with magenta, yellow and orange gradients in a swirly organic design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-203.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "5B6A9",
+      "x": -2575.6000000000004,
+      "y": -779,
+      "name": "a large background with magenta, yellow and orange gradients in a swirly organic design",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-205.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "BHhjo",
+      "x": -2009.6000000000004,
+      "y": -761,
+      "name": "a large background with magenta, yellow and orange gradients shaped a mushroom bomb blast",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-208.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "PLGeF",
+      "x": -2575.6000000000004,
+      "y": -1366,
+      "name": "a large background with magenta, yellow and orange gradients shaped a mushroom bomb blast",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-215.png",
+        "mode": "fill"
+      },
+      "width": 512,
+      "height": 512,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "jpK2y",
+      "x": -4124.6,
+      "y": 5111,
+      "name": "Screen Shot 2024-07-28 at 4.20.38 PM 1",
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "image-import-242.png",
+        "mode": "fill"
+      },
+      "width": 1600,
+      "height": 759,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      }
+    },
+    {
+      "type": "text",
+      "id": "HgFQ7",
+      "x": -3572.7347656250004,
+      "y": 5630.404296875,
+      "name": "https://gokulkrishnan.com/",
+      "fill": "#000000ff",
+      "content": "https://gokulkrishnan.com/",
+      "fontFamily": "Inter",
+      "fontSize": 12,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "DPXI5",
+      "x": -4124.6,
+      "y": 5879,
+      "name": "https://gokulkrishnan.com/",
+      "fill": "#ffffffff",
+      "content": "https://gokulkrishnan.com/",
+      "fontFamily": "Inter",
+      "fontSize": 12,
+      "fontWeight": "normal"
+    },
+    {
+      "type": "frame",
+      "id": "PEQ6B",
+      "x": 975,
+      "y": -3239,
+      "name": "Homepage",
+      "clip": true,
+      "width": 1440,
+      "height": 2000,
+      "fill": "#ffffffff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "mF7yE",
+          "x": 78.3033447265625,
+          "y": 401.4999694824219,
+          "name": "Rectangle 3",
+          "rotation": 45,
+          "fill": "#fd610014",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#fd6100ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "zrpUl",
+          "x": 577,
+          "y": 900.5,
+          "name": "Rectangle 6",
+          "rotation": 45,
+          "fill": "#ee0fac14",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "fPx24",
+          "x": 358.8481750488281,
+          "y": 401.4999694824219,
+          "name": "Rectangle 4",
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#dfdb20ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "0vuKS",
+          "x": -140,
+          "y": 900.5,
+          "name": "Rectangle 5",
+          "rotation": 45,
+          "fill": "#1fd3cf14",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "group",
+          "id": "tjd9A",
+          "x": 627,
+          "y": 19.99994909806003,
+          "name": "Group 1",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "FjgtP",
+              "x": 0,
+              "y": 73.00000321822426,
+              "name": "Rectangle 1",
+              "rotation": 45,
+              "fill": "#ee0fac14",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#ee0facff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "VAseV",
+              "x": 40,
+              "y": 73.00000321822426,
+              "name": "Rectangle 6",
+              "rotation": 45,
+              "fill": "#1fd3cf14",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#1fd3cfff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "mliJM",
+              "x": 44.312965393066406,
+              "y": 73.00000321822426,
+              "name": "White",
+              "rotation": 45,
+              "fill": "#5104cbff",
+              "width": 69,
+              "height": 69,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "frame",
+              "id": "IUe2y",
+              "x": 54,
+              "y": 34.00000703292153,
+              "name": "Frame 2",
+              "width": 56,
+              "height": 41.4200325012207,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oJiMj",
+                  "x": 1,
+                  "y": -1,
+                  "name": "logo{-appType}",
+                  "width": 80,
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wlCaU",
+                      "name": "JD 1",
+                      "clip": true,
+                      "width": 54.08011245727539,
+                      "height": 40,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "HIww1",
+                          "x": -0.013577732257544994,
+                          "y": 0.04073319956660271,
+                          "name": "Vector",
+                          "geometry": "M7.41 0.68l0-0.68 14.94 0 1.01 0.08 0 0.6c-4.28 0.16-4 0.76-4 8.68l0 9.84c0 6.04-2.64 10.24-11.4 10.24-4.92 0-7.96-2.64-7.96-5.8 0-2.48 1.64-4.64 4.4-4.64 2.76 0 4.36 1.92 4.36 4.48 0 2.96-2.96 4.88-6 3.52 0.88 0.88 2.44 1.64 4.44 1.64 2.84 0 4.2-1.76 4.2-5.12l0-14.16c0-7.92 0.28-8.52-4-8.68l0.01 0z",
+                          "fill": "#ffffffff",
+                          "width": 31.717586517333984,
+                          "height": 39.97284698486328,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "id": "aK0DJ",
+                          "x": 24.901561737060547,
+                          "y": -0.007088771089911461,
+                          "name": "Vector",
+                          "geometry": "M0 28.95522l3.21 0c11.32 0.13 18.28-5.1 18.28-14.62 0-9.52-6.96-14.52-18.27-14.33l-1.21 0.02c0 0.31 0.39 0.73 0.39 1.04 0 0 1.01-0.39 2.47-0.3 0.35 0.02 0.59 0.08 0.88 0.15 4.3 0.97 7.7 5.37 7.7 13.48 0 6.74-2.6 11.13-6.23 12.82-0.74 0.35-1.52 0.53-2.34 0.69",
+                          "fill": "#ffffffff",
+                          "width": 29.178550720214844,
+                          "height": 39.317840576171875,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "KSiXm",
+          "x": 239,
+          "y": 252,
+          "name": "Jennifer D’Amato is a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way.",
+          "fill": "#551936ff",
+          "content": "Jennifer D’Amato\nis a product designer who enjoy the process \nof problem solving and turning ideas into reality,  in an accessible and systematic way. ",
+          "lineHeight": 1.1666666666666667,
+          "textAlign": "center",
+          "fontFamily": "Abhaya Libre ExtraBold",
+          "fontSize": 48,
+          "fontWeight": "normal",
+          "letterSpacing": -0.96
+        },
+        {
+          "type": "path",
+          "id": "q03QO",
+          "x": 720,
+          "y": 538,
+          "name": "Arrow 1",
+          "rotation": -90.00000250447827,
+          "geometry": "M0 0l100 0",
+          "width": 30,
+          "height": 0,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#5104cbff"
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "uTNrH",
+      "x": 3059,
+      "y": -7393,
+      "name": "Homepage - Mobile",
+      "clip": true,
+      "width": 375,
+      "height": 2000,
+      "fill": "#ffffffff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "poRHj",
+          "x": -421.7734375,
+          "y": 395.30224609375,
+          "name": "Rectangle 3",
+          "rotation": 45,
+          "fill": "#fd610014",
+          "width": 692.7344360351562,
+          "height": 692.7344360351562,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2.9302327632904053,
+            "fill": "#fd6100ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "29abR",
+          "x": 65.3255615234375,
+          "y": 882.69775390625,
+          "name": "Rectangle 6",
+          "rotation": 45,
+          "fill": "#ee0fac14",
+          "width": 692.7344360351562,
+          "height": 692.7344360351562,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2.9302327632904053,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "33iWW",
+          "x": -147.7529296875,
+          "y": 395.30224609375,
+          "name": "Rectangle 4",
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 692.7344360351562,
+          "height": 692.7344360351562,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2.9302327632904053,
+            "fill": "#dfdb20ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "qvBUZ",
+          "x": -635,
+          "y": 882.69775390625,
+          "name": "Rectangle 5",
+          "rotation": 45,
+          "fill": "#1fd3cf14",
+          "width": 692.7344360351562,
+          "height": 692.7344360351562,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2.9302327632904053,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "group",
+          "id": "qLs0q",
+          "x": 115,
+          "y": 19.99999678177585,
+          "name": "Group 1",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "jTJg3",
+              "x": 0,
+              "y": 73.00000321822426,
+              "name": "Rectangle 1",
+              "rotation": 45,
+              "fill": "#ee0fac14",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#ee0facff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "IY7zS",
+              "x": 40,
+              "y": 73.00000321822426,
+              "name": "Rectangle 6",
+              "rotation": 45,
+              "fill": "#1fd3cf14",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#1fd3cfff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "fD5T3",
+              "x": 44.312965393066406,
+              "y": 73.00000321822426,
+              "name": "White",
+              "rotation": 45,
+              "fill": "#5104cbff",
+              "width": 69,
+              "height": 69,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "frame",
+              "id": "elLPU",
+              "x": 54,
+              "y": 34.00000703292153,
+              "name": "Frame 2",
+              "width": 56,
+              "height": 41.4200325012207,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qta8e",
+                  "x": 1,
+                  "y": -1,
+                  "name": "logo{-appType}",
+                  "width": 80,
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Czutr",
+                      "name": "JD 1",
+                      "clip": true,
+                      "width": 54.08011245727539,
+                      "height": 40,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "bIWDw",
+                          "x": -0.013577732257544994,
+                          "y": 0.04073319956660271,
+                          "name": "Vector",
+                          "geometry": "M7.41 0.68l0-0.68 14.94 0 1.01 0.08 0 0.6c-4.28 0.16-4 0.76-4 8.68l0 9.84c0 6.04-2.64 10.24-11.4 10.24-4.92 0-7.96-2.64-7.96-5.8 0-2.48 1.64-4.64 4.4-4.64 2.76 0 4.36 1.92 4.36 4.48 0 2.96-2.96 4.88-6 3.52 0.88 0.88 2.44 1.64 4.44 1.64 2.84 0 4.2-1.76 4.2-5.12l0-14.16c0-7.92 0.28-8.52-4-8.68l0.01 0z",
+                          "fill": "#ffffffff",
+                          "width": 31.717586517333984,
+                          "height": 39.97284698486328,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "id": "aM2dZ",
+                          "x": 24.901561737060547,
+                          "y": -0.007088771089911461,
+                          "name": "Vector",
+                          "geometry": "M0 28.95522l3.21 0c11.32 0.13 18.28-5.1 18.28-14.62 0-9.52-6.96-14.52-18.27-14.33l-1.21 0.02c0 0.31 0.39 0.73 0.39 1.04 0 0 1.01-0.39 2.47-0.3 0.35 0.02 0.59 0.08 0.88 0.15 4.3 0.97 7.7 5.37 7.7 13.48 0 6.74-2.6 11.13-6.23 12.82-0.74 0.35-1.52 0.53-2.34 0.69",
+                          "fill": "#ffffffff",
+                          "width": 29.178550720214844,
+                          "height": 39.317840576171875,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "OxoLL",
+          "x": 31,
+          "y": 240,
+          "name": "Jennifer  D’Amato is a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way.",
+          "fill": "#551936ff",
+          "textGrowth": "fixed-width",
+          "width": 330,
+          "content": "Jennifer  D’Amato\nis a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way. ",
+          "lineHeight": 1.5,
+          "textAlign": "center",
+          "fontFamily": "Abhaya Libre ExtraBold",
+          "fontSize": 30,
+          "fontWeight": "normal",
+          "letterSpacing": -0.96
+        },
+        {
+          "type": "path",
+          "id": "LG1MN",
+          "x": 198,
+          "y": 578,
+          "name": "Arrow 1",
+          "rotation": -90.00000250447827,
+          "geometry": "M0 0l100 0",
+          "width": 30,
+          "height": 0,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#5104cbff"
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Z54QK",
+      "x": 2455.3999999999996,
+      "y": -3239,
+      "name": "Homepage - Scroll Interaction",
+      "clip": true,
+      "width": 1440,
+      "height": 2000,
+      "fill": "#ffffffff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "CmH2x",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 6",
+          "enabled": false,
+          "rotation": 45,
+          "fill": "#e2099714",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "xSmsV",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 4",
+          "enabled": false,
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#dfdb20ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "JI9Q4",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 5",
+          "enabled": false,
+          "rotation": 45,
+          "fill": "#1fd3cf14",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "OrN6v",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 3",
+          "rotation": 45,
+          "fill": "#fd61001a",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#fd6100ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "iiLxD",
+          "x": -110,
+          "y": 933.9797973632812,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#1fd3cf14",
+          "width": 560,
+          "height": 560,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "group",
+          "id": "epbaY",
+          "x": 627,
+          "y": 19.999989152381318,
+          "name": "Group 1",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "CPtrI",
+              "x": 0,
+              "y": 73.00000321822426,
+              "name": "Rectangle 1",
+              "rotation": 45,
+              "fill": "#ee0fac1a",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#ee0facff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "VE5V5",
+              "x": 40,
+              "y": 73.00000321822426,
+              "name": "Rectangle 6",
+              "rotation": 45,
+              "fill": "#1fd3cf1a",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#1fd3cfff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "5Yhvt",
+              "x": 44.312965393066406,
+              "y": 73.00000321822426,
+              "name": "White",
+              "rotation": 45,
+              "fill": "#5104cbff",
+              "width": 69,
+              "height": 69,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "frame",
+              "id": "qWtMQ",
+              "x": 54,
+              "y": 34.00000703292153,
+              "name": "Frame 2",
+              "width": 56,
+              "height": 41.4200325012207,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ctcFi",
+                  "x": 1,
+                  "y": -1,
+                  "name": "logo{-appType}",
+                  "width": 80,
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "cPzwp",
+                      "name": "JD 1",
+                      "clip": true,
+                      "width": 54.08011245727539,
+                      "height": 40,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "LjxKg",
+                          "x": -0.013577732257544994,
+                          "y": 0.04073319956660271,
+                          "name": "Vector",
+                          "geometry": "M7.41 0.68l0-0.68 14.94 0 1.01 0.08 0 0.6c-4.28 0.16-4 0.76-4 8.68l0 9.84c0 6.04-2.64 10.24-11.4 10.24-4.92 0-7.96-2.64-7.96-5.8 0-2.48 1.64-4.64 4.4-4.64 2.76 0 4.36 1.92 4.36 4.48 0 2.96-2.96 4.88-6 3.52 0.88 0.88 2.44 1.64 4.44 1.64 2.84 0 4.2-1.76 4.2-5.12l0-14.16c0-7.92 0.28-8.52-4-8.68l0.01 0z",
+                          "fill": "#ffffffff",
+                          "width": 31.717586517333984,
+                          "height": 39.97284698486328,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "id": "Kbz0c",
+                          "x": 24.901561737060547,
+                          "y": -0.007088771089911461,
+                          "name": "Vector",
+                          "geometry": "M0 28.95522l3.21 0c11.32 0.13 18.28-5.1 18.28-14.62 0-9.52-6.96-14.52-18.27-14.33l-1.21 0.02c0 0.31 0.39 0.73 0.39 1.04 0 0 1.01-0.39 2.47-0.3 0.35 0.02 0.59 0.08 0.88 0.15 4.3 0.97 7.7 5.37 7.7 13.48 0 6.74-2.6 11.13-6.23 12.82-0.74 0.35-1.52 0.53-2.34 0.69",
+                          "fill": "#ffffffff",
+                          "width": 29.178550720214844,
+                          "height": 39.317840576171875,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "saHaV",
+          "x": 238.60000000000036,
+          "y": 290,
+          "name": "Jennifer D’Amato is a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way.",
+          "fill": "#551936ff",
+          "content": "Jennifer D’Amato\nis a product designer who enjoy the process \nof problem solving and turning ideas into reality,  in an accessible and systematic way. ",
+          "lineHeight": 1.1666666666666667,
+          "textAlign": "center",
+          "fontFamily": "Abhaya Libre ExtraBold",
+          "fontSize": 48,
+          "fontWeight": "normal",
+          "letterSpacing": -0.96
+        },
+        {
+          "type": "path",
+          "id": "jCSf9",
+          "x": 720,
+          "y": 538,
+          "name": "Arrow 1",
+          "rotation": -90.00000250447827,
+          "geometry": "M0 0l100 0",
+          "width": 30,
+          "height": 0,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#5104cbff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "oifLM",
+          "x": 319,
+          "y": 1361.979736328125,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#ee0fac14",
+          "width": 560,
+          "height": 560,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "lXlcB",
+          "x": 748,
+          "y": 933.9797973632812,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 560,
+          "height": 560,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#dfdb20ff"
+          }
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2bREq",
+      "x": 2180,
+      "y": -5924,
+      "name": "Homepage - Mobile Scroll",
+      "clip": true,
+      "width": 375,
+      "height": 2000,
+      "fill": "#ffffffff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "XxZXW",
+          "x": -293,
+          "y": 284.8326110839844,
+          "name": "Rectangle 3",
+          "rotation": 45,
+          "fill": "#fd61001a",
+          "width": 680,
+          "height": 680,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#fd6100ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "LGp99",
+          "x": -109,
+          "y": 1057.98486328125,
+          "name": "Rectangle 8",
+          "rotation": 45,
+          "fill": "#1fd3cf14",
+          "width": 420,
+          "height": 420,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "JY7Zl",
+          "x": -109,
+          "y": 1646.98486328125,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 420,
+          "height": 420,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#dfdb20ff"
+          }
+        },
+        {
+          "type": "text",
+          "id": "aHtJN",
+          "x": 31,
+          "y": 240,
+          "name": "Jennifer  D’Amato is a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way.",
+          "fill": "#551936ff",
+          "textGrowth": "fixed-width",
+          "width": 330,
+          "content": "Jennifer  D’Amato\nis a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way. ",
+          "lineHeight": 1.5,
+          "textAlign": "center",
+          "fontFamily": "Abhaya Libre ExtraBold",
+          "fontSize": 30,
+          "fontWeight": "normal",
+          "letterSpacing": -0.96
+        },
+        {
+          "type": "path",
+          "id": "O141P",
+          "x": 198,
+          "y": 578,
+          "name": "Arrow 1",
+          "rotation": -90.00000250447827,
+          "geometry": "M0 0l100 0",
+          "width": 30,
+          "height": 0,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#5104cbff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "4EFH5",
+          "x": -109,
+          "y": 2235.98486328125,
+          "name": "Rectangle 9",
+          "rotation": 45,
+          "fill": "#ee0fac14",
+          "width": 420,
+          "height": 420,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "group",
+          "id": "4foAB",
+          "x": 94,
+          "y": 51,
+          "name": "Group 1",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "p0lWA",
+              "x": 0,
+              "y": 73.00000321822426,
+              "name": "Rectangle 1",
+              "rotation": 45,
+              "fill": "#ee0fac1a",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#ee0facff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "3deYl",
+              "x": 40,
+              "y": 73.00000321822426,
+              "name": "Rectangle 6",
+              "rotation": 45,
+              "fill": "#1fd3cf1a",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#1fd3cfff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "ZMFpp",
+              "x": 44.312965393066406,
+              "y": 73.00000321822426,
+              "name": "White",
+              "rotation": 45,
+              "fill": "#5104cbff",
+              "width": 69,
+              "height": 69,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "frame",
+              "id": "YaHp5",
+              "x": 54,
+              "y": 34.00000703292153,
+              "name": "Frame 2",
+              "width": 56,
+              "height": 41.4200325012207,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "m2CWC",
+                  "x": 1,
+                  "y": -1,
+                  "name": "logo{-appType}",
+                  "width": 80,
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hmj16",
+                      "name": "JD 1",
+                      "clip": true,
+                      "width": 54.08011245727539,
+                      "height": 40,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "uMP4y",
+                          "x": -0.013577732257544994,
+                          "y": 0.04073319956660271,
+                          "name": "Vector",
+                          "geometry": "M7.41 0.68l0-0.68 14.94 0 1.01 0.08 0 0.6c-4.28 0.16-4 0.76-4 8.68l0 9.84c0 6.04-2.64 10.24-11.4 10.24-4.92 0-7.96-2.64-7.96-5.8 0-2.48 1.64-4.64 4.4-4.64 2.76 0 4.36 1.92 4.36 4.48 0 2.96-2.96 4.88-6 3.52 0.88 0.88 2.44 1.64 4.44 1.64 2.84 0 4.2-1.76 4.2-5.12l0-14.16c0-7.92 0.28-8.52-4-8.68l0.01 0z",
+                          "fill": "#ffffffff",
+                          "width": 31.717586517333984,
+                          "height": 39.97284698486328,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "id": "yHXOl",
+                          "x": 24.901561737060547,
+                          "y": -0.007088771089911461,
+                          "name": "Vector",
+                          "geometry": "M0 28.95522l3.21 0c11.32 0.13 18.28-5.1 18.28-14.62 0-9.52-6.96-14.52-18.27-14.33l-1.21 0.02c0 0.31 0.39 0.73 0.39 1.04 0 0 1.01-0.39 2.47-0.3 0.35 0.02 0.59 0.08 0.88 0.15 4.3 0.97 7.7 5.37 7.7 13.48 0 6.74-2.6 11.13-6.23 12.82-0.74 0.35-1.52 0.53-2.34 0.69",
+                          "fill": "#ffffffff",
+                          "width": 29.178550720214844,
+                          "height": 39.317840576171875,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "vJ6ZT",
+      "x": 3935,
+      "y": -3239,
+      "name": "Homepage - Hover/Select",
+      "clip": true,
+      "width": 1440,
+      "height": 3200,
+      "fill": "#ffffffff",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "nMyiu",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 6",
+          "enabled": false,
+          "rotation": 45,
+          "fill": "#e2099714",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "q7NaK",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 4",
+          "enabled": false,
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#dfdb20ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "m6Nq7",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 5",
+          "enabled": false,
+          "rotation": 45,
+          "fill": "#1fd3cf14",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "kZ6Kp",
+          "x": 214,
+          "y": 402,
+          "name": "Rectangle 3",
+          "rotation": 45,
+          "fill": "#fd61001a",
+          "width": 709.2280883789062,
+          "height": 709.2280883789062,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#fd6100ff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "PvCUk",
+          "x": -110,
+          "y": 933.9797973632812,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#1fd3cfff",
+          "width": 560,
+          "height": 560,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#1fd3cfff"
+          }
+        },
+        {
+          "type": "group",
+          "id": "0YhXg",
+          "x": 627,
+          "y": 19.999989152381318,
+          "name": "Group 1",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "nRTLp",
+              "x": 0,
+              "y": 73.00000321822426,
+              "name": "Rectangle 1",
+              "rotation": 45,
+              "fill": "#ee0fac1a",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#ee0facff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "c7yq0",
+              "x": 40,
+              "y": 73.00000321822426,
+              "name": "Rectangle 6",
+              "rotation": 45,
+              "fill": "#1fd3cf1a",
+              "width": 103.23759460449219,
+              "height": 103.23759460449219,
+              "stroke": {
+                "align": "inside",
+                "thickness": 3,
+                "fill": "#1fd3cfff"
+              }
+            },
+            {
+              "type": "rectangle",
+              "id": "rYTLg",
+              "x": 44.312965393066406,
+              "y": 73.00000321822426,
+              "name": "White",
+              "rotation": 45,
+              "fill": "#5104cbff",
+              "width": 69,
+              "height": 69,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              }
+            },
+            {
+              "type": "frame",
+              "id": "yFWNJ",
+              "x": 54,
+              "y": 34.00000703292153,
+              "name": "Frame 2",
+              "width": 56,
+              "height": 41.4200325012207,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "chj4S",
+                  "x": 1,
+                  "y": -1,
+                  "name": "logo{-appType}",
+                  "width": 80,
+                  "cornerRadius": 48,
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    18,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "L15b5",
+                      "name": "JD 1",
+                      "clip": true,
+                      "width": 54.08011245727539,
+                      "height": 40,
+                      "fill": {
+                        "type": "color",
+                        "color": "#ffffffff",
+                        "enabled": false
+                      },
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1
+                      },
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "ra5PV",
+                          "x": -0.013577732257544994,
+                          "y": 0.04073319956660271,
+                          "name": "Vector",
+                          "geometry": "M7.41 0.68l0-0.68 14.94 0 1.01 0.08 0 0.6c-4.28 0.16-4 0.76-4 8.68l0 9.84c0 6.04-2.64 10.24-11.4 10.24-4.92 0-7.96-2.64-7.96-5.8 0-2.48 1.64-4.64 4.4-4.64 2.76 0 4.36 1.92 4.36 4.48 0 2.96-2.96 4.88-6 3.52 0.88 0.88 2.44 1.64 4.44 1.64 2.84 0 4.2-1.76 4.2-5.12l0-14.16c0-7.92 0.28-8.52-4-8.68l0.01 0z",
+                          "fill": "#ffffffff",
+                          "width": 31.717586517333984,
+                          "height": 39.97284698486328,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        },
+                        {
+                          "type": "path",
+                          "id": "DfQGw",
+                          "x": 24.901561737060547,
+                          "y": -0.007088771089911461,
+                          "name": "Vector",
+                          "geometry": "M0 28.95522l3.21 0c11.32 0.13 18.28-5.1 18.28-14.62 0-9.52-6.96-14.52-18.27-14.33l-1.21 0.02c0 0.31 0.39 0.73 0.39 1.04 0 0 1.01-0.39 2.47-0.3 0.35 0.02 0.59 0.08 0.88 0.15 4.3 0.97 7.7 5.37 7.7 13.48 0 6.74-2.6 11.13-6.23 12.82-0.74 0.35-1.52 0.53-2.34 0.69",
+                          "fill": "#ffffffff",
+                          "width": 29.178550720214844,
+                          "height": 39.317840576171875,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "9t2da",
+          "x": 206.60000000000036,
+          "y": 290,
+          "name": "Jennifer D’Amato is a product designer who enjoy the process of problem solving and turning ideas into reality,  in an accessible and systematic way.",
+          "fill": "#551936ff",
+          "content": "Jennifer D’Amato\nis a product designer who enjoy the process \nof problem solving and turning ideas into reality,  in an accessible and systematic way. ",
+          "lineHeight": 1.1666666666666667,
+          "textAlign": "center",
+          "fontFamily": "Abhaya Libre ExtraBold",
+          "fontSize": 48,
+          "fontWeight": "normal",
+          "letterSpacing": -0.96
+        },
+        {
+          "type": "path",
+          "id": "VLoyD",
+          "x": 720,
+          "y": 538,
+          "name": "Arrow 1",
+          "rotation": -90.00000250447827,
+          "geometry": "M0 0l100 0",
+          "width": 30,
+          "height": 0,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#5104cbff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "wgEdP",
+          "x": 319,
+          "y": 1361.979736328125,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#ee0fac14",
+          "width": 560,
+          "height": 560,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#ee0facff"
+          }
+        },
+        {
+          "type": "rectangle",
+          "id": "M29Dv",
+          "x": 748,
+          "y": 933.9797973632812,
+          "name": "Rectangle 7",
+          "rotation": 45,
+          "fill": "#dfdb2014",
+          "width": 560,
+          "height": 560,
+          "stroke": {
+            "align": "inside",
+            "thickness": 3,
+            "fill": "#dfdb20ff"
+          }
+        },
+        {
+          "type": "text",
+          "id": "MMD0M",
+          "x": 80,
+          "y": 2090,
+          "name": "sectionLabel",
+          "fill": "#787878",
+          "content": "Selected Work",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "600",
+          "letterSpacing": 2
+        },
+        {
+          "type": "frame",
+          "id": "YONhu",
+          "x": 80,
+          "y": 2136,
+          "width": 413,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "SNTnX",
+              "fill": "#10CFCF",
+              "width": "fill_container",
+              "height": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "0DDOf",
+              "fill": "#E8FAFA",
+              "width": "fill_container",
+              "height": 180
+            },
+            {
+              "type": "frame",
+              "id": "UxKlO",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0hqct",
+                  "fill": "#1A1A1A",
+                  "content": "Amor Design System",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "t4Zvz",
+                  "fill": "#666666",
+                  "content": "Building up a multi-brand design system.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yk6Dl",
+          "x": 513,
+          "y": 2136,
+          "width": 413,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "MSeK5",
+              "fill": "#DA2527",
+              "width": "fill_container",
+              "height": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "AR5iR",
+              "fill": "#FDE8E8",
+              "width": "fill_container",
+              "height": 180
+            },
+            {
+              "type": "frame",
+              "id": "rgGOL",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dUNTk",
+                  "fill": "#1A1A1A",
+                  "content": "NYPL e-Reader App",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "ZdSv4",
+                  "fill": "#666666",
+                  "content": "Tailoring the borrowing application experience for you.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dEpIc",
+          "x": 946,
+          "y": 2136,
+          "width": 413,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "VhcyP",
+              "fill": "#2961CA",
+              "width": "fill_container",
+              "height": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "dIWKL",
+              "fill": "#E8EDFB",
+              "width": "fill_container",
+              "height": 180
+            },
+            {
+              "type": "frame",
+              "id": "3oTRI",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5K7Ti",
+                  "fill": "#1A1A1A",
+                  "content": "medic",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "8bRES",
+                  "fill": "#666666",
+                  "content": "A better way to self-diagnosing.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fqJOQ",
+          "x": 297,
+          "y": 2500,
+          "width": 413,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "HJMeC",
+              "fill": "#009CDE",
+              "width": "fill_container",
+              "height": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "u1WwA",
+              "fill": "#E0F4FF",
+              "width": "fill_container",
+              "height": 180
+            },
+            {
+              "type": "frame",
+              "id": "jUp1j",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QZ6cR",
+                  "fill": "#1A1A1A",
+                  "content": "Springboard Guide",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "IFPq2",
+                  "fill": "#666666",
+                  "content": "Creating a guide to help teachers navigate the Springboard frameworks.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xdx9B",
+          "x": 730,
+          "y": 2500,
+          "width": 413,
+          "fill": "#FFFFFF",
+          "cornerRadius": 8,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#E5E5E5"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "kWskx",
+              "fill": "#006298",
+              "width": "fill_container",
+              "height": 4
+            },
+            {
+              "type": "rectangle",
+              "id": "VMeLg",
+              "fill": "#E0EDF6",
+              "width": "fill_container",
+              "height": 180
+            },
+            {
+              "type": "frame",
+              "id": "WNMCG",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "za6nq",
+                  "fill": "#1A1A1A",
+                  "content": "CollegeBoard Membership",
+                  "fontFamily": "Inter",
+                  "fontSize": 17,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "OAius",
+                  "fill": "#666666",
+                  "content": "Helping current and potential College Board Members clear a path for students.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
