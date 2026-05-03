@@ -196,6 +196,7 @@ for (const h of headings) {
     sub.classList.toggle('open', open);
     btn?.classList.toggle('open', open);
     btn?.setAttribute('aria-expanded', String(open));
+    btn?.setAttribute('aria-label', open ? 'Collapse subsections' : 'Expand subsections');
   }
 
   if (tocLinks.length && sections.length) {
@@ -235,6 +236,7 @@ for (const h of headings) {
       const isOpen = sub.classList.toggle('open');
       btn.classList.toggle('open', isOpen);
       btn.setAttribute('aria-expanded', String(isOpen));
+      btn.setAttribute('aria-label', isOpen ? 'Collapse subsections' : 'Expand subsections');
     });
   });
 </script>
@@ -251,7 +253,7 @@ for (const h of headings) {
                 <div class="toc-h2-row">
                   <a href={`#${h2.slug}`}>{h2.text}</a>
                   {h2.children.length > 0 && (
-                    <button class="toc-toggle" aria-expanded="false" aria-label="Toggle subsections">▸</button>
+                    <button class="toc-toggle" aria-expanded="false" aria-label="Expand subsections">▸</button>
                   )}
                 </div>
                 {h2.children.length > 0 && (

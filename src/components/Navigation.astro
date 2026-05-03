@@ -277,10 +277,13 @@ const navigation = {
         <div class="desktop-links">
             <ul>
                 { Object.entries(navigation).map(([label, href]) => (
-                    <li><a href={ href } {...href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}>{ label }</a></li>
+                    <li><a href={ href } {...href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}>
+                        { label }
+                        {href.startsWith('http') && <span class="sr-only">(opens in new tab)</span>}
+                    </a></li>
                 )) }
             </ul>
-            <a href="https://cal.com/jennifer-damato" class="book-btn" target="_blank" rel="noopener noreferrer">Book a call &rarr;</a>
+            <a href="https://cal.com/jennifer-damato" class="book-btn" target="_blank" rel="noopener noreferrer">Book a call &rarr;<span class="sr-only"> (opens in new tab)</span></a>
         </div>
 
         <!-- Hamburger toggle -->
@@ -294,12 +297,15 @@ const navigation = {
         </button>
 
         <!-- Mobile menu -->
-        <div class="mobile-menu" id="mobile-nav" aria-hidden="true">
+        <div class="mobile-menu" id="mobile-nav" aria-hidden="true" inert>
             <ul>
                 { Object.entries(navigation).map(([label, href]) => (
-                    <li><a href={ href } {...href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}>{ label }</a></li>
+                    <li><a href={ href } {...href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}>
+                        { label }
+                        {href.startsWith('http') && <span class="sr-only">(opens in new tab)</span>}
+                    </a></li>
                 )) }
-                <li><a href="https://cal.com/jennifer-damato" target="_blank" rel="noopener noreferrer">Book a Call</a></li>
+                <li><a href="https://cal.com/jennifer-damato" target="_blank" rel="noopener noreferrer">Book a Call<span class="sr-only"> (opens in new tab)</span></a></li>
             </ul>
         </div>
     </nav>
@@ -312,6 +318,7 @@ const navigation = {
     function openMenu() {
         menu?.classList.add('open');
         menu?.setAttribute('aria-hidden', 'false');
+        menu?.removeAttribute('inert');
         toggle?.setAttribute('aria-expanded', 'true');
         toggle?.setAttribute('aria-label', 'Close navigation menu');
     }
@@ -319,6 +326,7 @@ const navigation = {
     function closeMenu() {
         menu?.classList.remove('open');
         menu?.setAttribute('aria-hidden', 'true');
+        menu?.setAttribute('inert', '');
         toggle?.setAttribute('aria-expanded', 'false');
         toggle?.setAttribute('aria-label', 'Open navigation menu');
     }

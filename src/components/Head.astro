@@ -13,9 +13,9 @@ const schema = {
     mainEntity: {
         "@id": "#main-author",
         "@type": "Person",
-        name: "Jennifer D'Amato",
+        name: "Jennifer D’Amato",
         alternateName: "jipdamato",
-        description: "Design Systems Architect",
+        description: "Design Systems Designer",
         image: "http://jennifer.damato.design/images/jipdamato_image.jpg",
         sameAs: [
             "https://twitter.com/jipdamato",
@@ -263,10 +263,22 @@ const schema = {
         display: contents;
     }
 
+    /* Screen-reader only utility */
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+
     /* Chaos word — letter jitter animation */
     .chaos-word {
         display: inline-block;
-        cursor: default;
         background-image: radial-gradient(circle, var(--red) 1px, transparent 1px);
         background-size: 5px 2px;
         background-position: 0 100%;
