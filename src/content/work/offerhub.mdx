@@ -1,5 +1,5 @@
 ---
-title: Signet Jewelers' Offer Hub
+title: Signet Jewelers’ Offer Hub
 date: 2024-01-01
 endDate: 2025-01-01
 accent: rgb(46, 46, 46)
@@ -18,7 +18,7 @@ draft: false
 
 ## The Problem
 
-Signet's brand sites had no cohesive strategy for displaying promotions. Offers were repeated across pages, disconnected from what users were shopping for, and difficult to return to once seen. The experience was fragmented for both registered and guest users.
+Signet’s brand sites had no cohesive strategy for displaying promotions. Offers were repeated across pages, disconnected from what users were shopping for, and difficult to return to once seen. The experience was fragmented for both registered and guest users.
 
 The result was **user frustration, low engagement with promotions, and missed conversion opportunities**. This was not from a lack of offers, but from a lack of structure around them.
 
@@ -65,7 +65,7 @@ Four themes emerged:
 
 - Most participants felt 4 to 6 offers was the right range. It was enough variety without feeling overwhelming
 - Beyond that, perception shifted: too many promotions made the brand feel like it was struggling, or made individual offers feel less valuable
-- Participants described seeing too many promotions as a signal that a brand "isn't doing well or is trying to get rid of inventory"
+- Participants described seeing too many promotions as a signal that a brand "isn’t doing well or is trying to get rid of inventory"
 
 > When everything is a deal, nothing feels like one
 
@@ -108,7 +108,7 @@ This respected the casual browser without cutting off the intentional one
 
 ### Simplicity
 
-Signet's US brands already operate without promo codes, automatically applying the best price. Research reinforced this: users didn't want to hunt, compare, or do the math. We leaned into that by removing friction rather than adding explanation
+Signet’s US brands already operate without promo codes, automatically applying the best price. Research reinforced this: users didn’t want to hunt, compare, or do the math. We leaned into that by removing friction rather than adding explanation
 
 
 ### Personalization
@@ -117,12 +117,13 @@ Signet's US brands already operate without promo codes, automatically applying t
 
 The appetite was clear and consistent across participants, but constraints meant it had to wait. We design for it and shipped without it.
 
-## Side Quest
-
-Because this was a CMS-powered experience, I also designed the brand-partner-facing admin view, giving brand teams control over which offers appear in the hub, in addition to the consumer UI. 
+## A Parallel Track
+ 
 ![](/images/OH_CMS.png)
+Because this was a CMS-powered experience, I also designed the brand-partner-facing admin view, giving brand teams control over which offers appear in the hub, in addition to the consumer UI.
 
-
+![](/images/OH_Content.png)
+Late in development, the Dev Lead flagged that offers were taking a noticeable amount of time to load. I partnered with the content design team to account for that wait, designing a loading state and an error state so users always knew what was happening and where to go if something went wrong.
 
 ## Impact
 
@@ -169,16 +170,16 @@ Results were strong enough to move forward with full development.
 Clickthrough dropped because promotions were no longer competing for attention across every page. The users who sought out the Offer Hub were there intentionally, and the revenue reflected that.
 
 <div style="background:var(--ink);padding:2.5rem;margin:2.5rem 0;">
-  <p style="font-family:var(--font-serif);font-size:1.5rem;font-weight:700;color:#ffffff;line-height:1.35;margin:0;">The drawer didn't kill engagement. It killed distraction. Not every drop in clicks is a loss. Sometimes it's focus.</p>
+  <p style="font-family:var(--font-serif);font-size:1.5rem;font-weight:700;color:#ffffff;line-height:1.35;margin:0;">The drawer didn’t kill engagement. It killed distraction. Not every drop in clicks is a loss. Sometimes it’s focus.</p>
 </div>
 
 ![](/images/OH_Final.png)
 
-## What's Next
+## What’s Next
 
 Phase 1 was intentionally scoped to establish the foundation. Planned enhancements include:
 - **Personalization for account holders** - the most-requested feature across research, ready for Phase 2
 - **Enhanced loyalty benefits** - deeper rewards for members
-- **Promo code copy functionality** - a specific need for Signet's UK brands where codes are still required
+- **Promo code copy functionality** - a specific need for Signet’s UK brands where codes are still required
 - **Color exploration** - visual treatment to create emphasis hierarchy within the hub
 - **Integration with brand-owned offer pages** - consolidating the CMS so brand partners manage both surfaces in one place, reducing duplication and improving consistency
