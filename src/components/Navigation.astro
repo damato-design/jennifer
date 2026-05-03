@@ -277,10 +277,10 @@ const navigation = {
         <div class="desktop-links">
             <ul>
                 { Object.entries(navigation).map(([label, href]) => (
-                    <li><a href={ href }>{ label }</a></li>
+                    <li><a href={ href } {...href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}>{ label }</a></li>
                 )) }
             </ul>
-            <a href="https://cal.com/jennifer-damato" class="book-btn">Book a call &rarr;</a>
+            <a href="https://cal.com/jennifer-damato" class="book-btn" target="_blank" rel="noopener noreferrer">Book a call &rarr;</a>
         </div>
 
         <!-- Hamburger toggle -->
@@ -297,9 +297,9 @@ const navigation = {
         <div class="mobile-menu" id="mobile-nav" aria-hidden="true">
             <ul>
                 { Object.entries(navigation).map(([label, href]) => (
-                    <li><a href={ href }>{ label }</a></li>
+                    <li><a href={ href } {...href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {}}>{ label }</a></li>
                 )) }
-                <li><a href="https://cal.com/jennifer-damato">Book a Call</a></li>
+                <li><a href="https://cal.com/jennifer-damato" target="_blank" rel="noopener noreferrer">Book a Call</a></li>
             </ul>
         </div>
     </nav>
