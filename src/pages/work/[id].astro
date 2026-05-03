@@ -3,10 +3,11 @@ import Layout from '@layouts/Layout.astro';
 import Float from '@components/Float.astro';
 import Roles from '@components/Roles.astro';
 import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('work');
-  return posts.map((post) => {
+  return posts.map((post: CollectionEntry<'work'>) => {
     return {
       params: { id: post.slug },
       props: { post },
@@ -14,67 +15,268 @@ export async function getStaticPaths() {
   });
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { post }: { post: CollectionEntry<'work'> } = Astro.props;
+const { Content, headings } = await render(post);
+const startYear = new Date(post.data.date).getUTCFullYear();
+const endYear = post.data.endDate ? new Date(post.data.endDate).getUTCFullYear() : null;
+const year = endYear && endYear !== startYear ? `${startYear}–${endYear}` : `${startYear}`;
+
+type Heading = { depth: number; slug: string; text: string; children: Heading[] };
+const grouped: Heading[] = [];
+for (const h of headings) {
+  if (h.depth === 2) {
+    grouped.push({ ...h, children: [] });
+  } else if (h.depth === 3 && grouped.length > 0) {
+    grouped[grouped.length - 1].children.push({ ...h, children: [] });
+  }
+}
 ---
 
-<style>
+<style define:vars={{ accent: post.data.accent }}>
+  .case-study-body {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    padding-block: 2.5rem 4rem;
+  }
 
-:global(h2, h3) {
-  margin-block-start: 1.5em;
-  margin-block-end: .5em; 
-}
+  .toc {
+    position: sticky;
+    top: 5rem;
+  }
 
-:global(img) {
-  display: block;
-  margin-block: 1em;
-}
+  .toc-label {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    margin-bottom: 0.625rem;
+    padding-top: 15px;
+    display: block;
+  }
 
-.content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  gap: 1em;
-  justify-content: start;
-  align-items: start;
-  padding-block: 1.5rem;
-  padding-inline-end: 30%;
-  color: white;
-}
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-hr {
-  align-self: stretch;
-  margin: 0;
-  border: 0;
-  border-left: 1px solid white;
-}
+  .toc-h2-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem;
+  }
 
-.lockup {
-  font-family: "Syncopate", serif;
-  font-weight: bolder;
-  text-align: right;
-  align-self: end;
-  transform-origin: bottom right;
-  scale: .7;
-}
+  .toc-item a {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--neutral-500);
+    text-decoration: none;
+    display: block;
+    padding: 0.3rem 0 0.3rem 0.75rem;
+    border-left: 1.5px solid var(--muted);
+    line-height: 1.35;
+    transition: color 0.15s, border-color 0.15s;
+    flex: 1;
+  }
 
-.year {
-  font-size: 1.5em;
-  margin-block-end: .25em;
-}
+  .toc-item a:hover,
+  .toc-item a:focus-visible {
+    color: var(--ink);
+    border-left-color: var(--ink);
+    outline: none;
+  }
 
+  .toc-item a.active {
+    color: var(--accent, var(--ink));
+    border-left-color: var(--accent, var(--ink));
+    font-weight: 600;
+  }
+
+  .toc-toggle {
+    background: none;
+    border: none;
+    padding: 0 0 0 0.25rem;
+    cursor: pointer;
+    font-size: 0.72rem;
+    color: var(--neutral-400);
+    line-height: 1;
+    transition: transform 0.2s, color 0.15s;
+    flex-shrink: 0;
+    align-self: center;
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toc-toggle:hover {
+    color: var(--ink);
+  }
+
+  .toc-toggle:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+
+  .toc-toggle.open {
+    transform: rotate(90deg);
+  }
+
+  .toc-sub {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out;
+  }
+
+  .toc-sub.open {
+    max-height: 600px;
+  }
+
+  .toc-item.depth-3 a {
+    padding-left: 1.5rem;
+    font-size: 0.7rem;
+    color: var(--neutral-500);
+    border-left-color: transparent;
+  }
+
+  .toc-item.depth-3 a:hover {
+    color: var(--ink);
+    border-left-color: var(--muted);
+  }
+
+  .content-col {
+    min-width: 0;
+  }
+
+  .meta-year {
+    font-family: var(--font-mono);
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--accent, var(--ink));
+    line-height: 1;
+    padding-bottom: 0.875rem;
+    letter-spacing: -0.02em;
+  }
+
+  :global(.prose h2),
+  :global(.prose h3) {
+    scroll-margin-top: 5rem;
+  }
+
+  @media (max-width: 768px) {
+    .case-study-body {
+      grid-template-columns: 1fr;
+    }
+
+    .toc {
+      position: static;
+      border-bottom: 1px solid var(--muted);
+      padding-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 </style>
 
+<script>
+  const tocLinks = document.querySelectorAll<HTMLAnchorElement>('.toc-item a');
+  const sections = document.querySelectorAll<HTMLElement>('.prose h2, .prose h3');
+
+  function setSubOpen(h2Li: Element | null, open: boolean) {
+    const sub = h2Li?.querySelector<HTMLElement>('.toc-sub');
+    const btn = h2Li?.querySelector<HTMLButtonElement>('.toc-toggle');
+    if (!sub) return;
+    sub.classList.toggle('open', open);
+    btn?.classList.toggle('open', open);
+    btn?.setAttribute('aria-expanded', String(open));
+  }
+
+  if (tocLinks.length && sections.length) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          tocLinks.forEach((link) => link.classList.remove('active'));
+
+          const active = document.querySelector<HTMLAnchorElement>(
+            `.toc-item a[href="#${entry.target.id}"]`
+          );
+          if (!active) return;
+          active.classList.add('active');
+
+          // Find the depth-2 parent for this active link (works for both H2 and H3)
+          const activeH2Li = active.closest<HTMLElement>('li.depth-2');
+
+          // Close all sublists, open only the active one
+          document.querySelectorAll<HTMLElement>('li.depth-2').forEach((li) => {
+            setSubOpen(li, li === activeH2Li);
+          });
+        });
+      },
+      { rootMargin: '-10% 0px -80% 0px' }
+    );
+    sections.forEach((h) => observer.observe(h));
+  }
+
+  // Manual toggle — still works alongside auto-expand
+  document.querySelectorAll<HTMLButtonElement>('.toc-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const li = btn.closest<HTMLElement>('li.depth-2');
+      const sub = li?.querySelector<HTMLElement>('.toc-sub');
+      if (!sub) return;
+      const isOpen = sub.classList.toggle('open');
+      btn.classList.toggle('open', isOpen);
+      btn.setAttribute('aria-expanded', String(isOpen));
+    });
+  });
+</script>
+
 <Layout { ...post.data }>
-  <Float>
-    <div class="content" style={{ backgroundColor: post.data.accent }}>
-      <div class="lockup">
-        <div class="year">{ new Date(post.data.date).getFullYear() }</div>
-        <div>{ post.data.project } project</div>
+  <div class="case-study-body max-width">
+    <nav class="toc" aria-label="Page contents">
+      {grouped.length > 0 && (
+        <>
+          <span class="toc-label">Contents</span>
+          <ul class="toc-list">
+            {grouped.map((h2) => (
+              <li class="toc-item depth-2">
+                <div class="toc-h2-row">
+                  <a href={`#${h2.slug}`}>{h2.text}</a>
+                  {h2.children.length > 0 && (
+                    <button class="toc-toggle" aria-expanded="false" aria-label="Toggle subsections">▸</button>
+                  )}
+                </div>
+                {h2.children.length > 0 && (
+                  <ul class="toc-sub">
+                    {h2.children.map((h3) => (
+                      <li class="toc-item depth-3">
+                        <a href={`#${h3.slug}`}>{h3.text}</a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+    </nav>
+    <div class="content-col">
+      <Float>
+        <div class="meta-year">{ year }</div>
+        <Roles roles={ post.data.roles }/>
+      </Float>
+      <div class="prose">
+        <Content/>
       </div>
-      <hr/>
-      <Roles roles={ post.data.roles }/>
     </div>
-  </Float>
-	<Content/>
+  </div>
 </Layout>

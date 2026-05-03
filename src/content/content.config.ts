@@ -7,7 +7,8 @@ const other = defineCollection({
         title: z.string(),
         desc: z.string(),
         accent: z.string(),
-        draft: z.boolean(),
+        img: z.string().optional(),
+        draft: z.boolean().optional(),
     }),
 });
 
@@ -16,6 +17,7 @@ const work = defineCollection({
     schema: z.object({
         title: z.string(),
         date: z.date(),
+        endDate: z.date().optional(),
         accent: z.string(),
         desc: z.string(),
         project: z.string(),

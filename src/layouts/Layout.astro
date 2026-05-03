@@ -7,7 +7,7 @@ import Footer from '@components/Footer.astro';
 
 <style>
 	main {
-		padding-block: 1rem;
+		padding-block: 0;
 	}
 </style>
 
@@ -15,9 +15,10 @@ import Footer from '@components/Footer.astro';
 <html lang="en">
 	<Head { ...Astro.props }/>
 	<body>
+		<a href="#main-content" class="skip-link">Skip to content</a>
 		<Navigation/>
 		<Header { ...Astro.props }/>
-		<main class="max-width">
+		<main id="main-content" class="max-width">
 			<slot/>
 		</main>
 		<Footer/>

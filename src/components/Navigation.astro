@@ -1,37 +1,71 @@
 ---
-import Logo from '@assets/shape.svg';
-
 const navigation = {
-    About: '/about',
     Work: '/',
-    Resume: 'https://resume.damato.design/jennifer',
-    Contact: 'https://cal.com/jennifer-damato'
+    About: '/about',
+    Résumé: '/resume',
+    LinkedIn: 'http://linkedin.com/in/jipdamato'
 }
 ---
 
 <style>
-    .navigation {
+    .nav-wrapper {
         position: sticky;
-        top: 1rem;
-        pointer-events: none;
-        margin-block: 1rem;
-        z-index: 1;
+        top: 0;
+        z-index: 40;
+        background: var(--paper);
+        border-bottom: 2px solid var(--ink);
+    }
+
+    .edition-bar {
+        border-bottom: 1px solid var(--muted);
+        padding: 0.3rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .edition-bar span {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--neutral-500);
+    }
+
+    .edition-bar .red {
+        color: var(--red);
+        font-weight: 500;
     }
 
     nav {
-        pointer-events: initial;
         display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
         justify-content: space-between;
         align-items: center;
-        background-color: color-mix(in oklch, white, transparent 30%);
-        backdrop-filter: blur(5px);
-        padding-inline: 1rem;
-        padding-block: 1rem;
-        border-radius: 2rem;
-        border: 1px solid white;
-        /* max-width: min(var(--content-width) - 4rem, 100vw - 4rem); */
+        padding-block: 0.625rem;
+        position: relative;
+    }
+
+    .logo {
+        font-family: var(--font-serif);
+        font-size: 1.625rem;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: -0.03em;
+        text-decoration: none;
+        color: var(--ink);
+        line-height: 1;
+    }
+
+    .logo:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 3px;
+    }
+
+    /* Desktop nav links */
+    .desktop-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
     }
 
     ul {
@@ -39,23 +73,268 @@ const navigation = {
         margin: 0;
         padding: 0;
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         align-items: center;
     }
 
-    nav :global(svg) {
-        height: 1.5lh;
+    ul a {
+        font-family: var(--font-sans);
+        font-size: 0.6875rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--ink);
+        background: linear-gradient(var(--red), var(--red)) no-repeat 0 100% / 0% 1.5px;
+        transition: background-size 0.25s ease-out;
+        padding-bottom: 2px;
     }
 
+    ul a:hover,
+    ul a:focus-visible {
+        color: var(--ink);
+        background-size: 100% 1.5px;
+        outline: none;
+    }
+
+    .book-btn {
+        font-family: var(--font-sans);
+        font-size: 0.6875rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--ink);
+        background: transparent;
+        border: 1.5px solid var(--ink);
+        padding: 0.625rem 1.25rem;
+        display: inline-flex;
+        align-items: center;
+        transition: background 0.15s, color 0.15s;
+        white-space: nowrap;
+    }
+
+    .book-btn:hover,
+    .book-btn:focus-visible {
+        background: var(--ink);
+        color: var(--paper);
+        outline: none;
+    }
+
+    .book-btn:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+    }
+
+    /* Hamburger button — hidden on desktop */
+    .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.25rem 0 0.25rem 0.25rem;
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        color: var(--ink);
+    }
+
+    .menu-toggle:focus-visible {
+        outline: 2px solid var(--ink);
+        outline-offset: 2px;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: var(--ink);
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    }
+
+    .hamburger {
+        position: relative;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+
+    .hamburger::before { top: -6px; }
+    .hamburger::after  { top: 6px; }
+
+    /* Open state: animate to × */
+    .menu-toggle[aria-expanded="true"] .hamburger {
+        background: transparent;
+    }
+
+    .menu-toggle[aria-expanded="true"] .hamburger::before {
+        transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    .menu-toggle[aria-expanded="true"] .hamburger::after {
+        transform: rotate(-45deg) translate(4px, -4px);
+    }
+
+    /* Mobile menu panel */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--ink);
+        border-top: 2px solid var(--ink);
+        z-index: 1;
+        /* slide in */
+        transform: translateY(-8px);
+        opacity: 0;
+        transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    }
+
+    .mobile-menu.open {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .mobile-menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0;
+    }
+
+    .mobile-menu li {
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .mobile-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .mobile-menu ul a {
+        color: var(--paper);
+        padding: 0.875rem 1.5rem;
+        display: block;
+        background: linear-gradient(var(--red), var(--red)) no-repeat 0 100% / 0% 1.5px;
+        padding-bottom: calc(0.875rem + 2px);
+    }
+
+    .mobile-menu ul a:hover,
+    .mobile-menu ul a:focus-visible {
+        color: var(--paper);
+        background-size: 100% 1.5px;
+    }
+
+    @media (max-width: 640px) {
+        .edition-bar {
+            flex-wrap: wrap;
+            overflow: hidden;
+            gap: 0.5rem;
+        }
+
+        .edition-bar span {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        /* Hide desktop links, show hamburger */
+        .desktop-links {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: inline-flex;
+        }
+
+        .mobile-menu {
+            display: block;
+        }
+
+        /* Prevent visible when closed */
+        .mobile-menu:not(.open) {
+            pointer-events: none;
+        }
+    }
 </style>
 
-<div class="navigation">
+<div class="nav-wrapper">
+    <div class="edition-bar max-width">
+        <span><span class="red">&#9632;</span> Design Portfolio · Jennifer D'Amato</span>
+        <span class="edition-text">Located in New York</span>
+    </div>
     <nav class="max-width">
-        <a href="/">
-            <Logo/>
-        </a>
-        <ul>
-            { Object.entries(navigation).map(([label, href]) => <li><a href={ href }>{ label }</a></li>) }
-        </ul>
+        <a href="/" class="logo">JD.</a>
+
+        <!-- Desktop links -->
+        <div class="desktop-links">
+            <ul>
+                { Object.entries(navigation).map(([label, href]) => (
+                    <li><a href={ href }>{ label }</a></li>
+                )) }
+            </ul>
+            <a href="https://cal.com/jennifer-damato" class="book-btn">Book a call &rarr;</a>
+        </div>
+
+        <!-- Hamburger toggle -->
+        <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Open navigation menu"
+        >
+            <span class="hamburger"></span>
+        </button>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobile-nav" aria-hidden="true">
+            <ul>
+                { Object.entries(navigation).map(([label, href]) => (
+                    <li><a href={ href }>{ label }</a></li>
+                )) }
+                <li><a href="https://cal.com/jennifer-damato">Book a Call</a></li>
+            </ul>
+        </div>
     </nav>
 </div>
+
+<script>
+    const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
+    const menu = document.querySelector<HTMLElement>('.mobile-menu');
+
+    function openMenu() {
+        menu?.classList.add('open');
+        menu?.setAttribute('aria-hidden', 'false');
+        toggle?.setAttribute('aria-expanded', 'true');
+        toggle?.setAttribute('aria-label', 'Close navigation menu');
+    }
+
+    function closeMenu() {
+        menu?.classList.remove('open');
+        menu?.setAttribute('aria-hidden', 'true');
+        toggle?.setAttribute('aria-expanded', 'false');
+        toggle?.setAttribute('aria-label', 'Open navigation menu');
+    }
+
+    toggle?.addEventListener('click', () => {
+        menu?.classList.contains('open') ? closeMenu() : openMenu();
+    });
+
+    menu?.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && menu?.classList.contains('open')) {
+            closeMenu();
+            toggle?.focus();
+        }
+    });
+</script>

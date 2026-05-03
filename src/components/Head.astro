@@ -47,32 +47,41 @@ const schema = {
     <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:image:alt" content={title} />
-    <meta name="theme-color" content="#fff" />
+    <meta name="theme-color" content="#F9F9F7" />
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Jennifer D'Amato" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <script async defer src="https://scripts.withcabin.com/hello.js"></script>
     <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 </head>
 
 <style is:global>
-    *,
-    *::before,
-    *::after {
+    *, *::before, *::after {
         box-sizing: border-box;
+        border-radius: 0 !important;
     }
 
     :root {
-        --content-width: 80ch;
+        --ink: #111111;
+        --paper: #F9F9F7;
+        --muted: #E5E5E0;
+        --red: #CC0000;
+        --neutral-400: #6b6b6b;
+        --neutral-500: #595959;
+        --neutral-600: #333333;
+        --content-width: 944px;
+
+        --font-serif: 'Playfair Display', 'Times New Roman', serif;
+        --font-body: 'Lora', Georgia, serif;
+        --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+        --font-mono: 'JetBrains Mono', 'Courier New', monospace;
     }
 
     html {
@@ -81,29 +90,322 @@ const schema = {
 
     body {
         margin: 0;
-        font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+        background-color: var(--paper);
+        color: var(--ink);
+        font-family: var(--font-body);
         font-optical-sizing: auto;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23111111' fill-opacity='0.04' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     }
 
     a {
         color: inherit;
     }
 
-    img {
-        max-width: 100%;
+    /* Skip to content — visually hidden until focused */
+    .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        z-index: 100;
+        background: var(--ink);
+        color: var(--paper);
+        padding: 0.5rem 1.25rem;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
     }
 
-    :where(h1, h2, h3) {
-        font-family: "Syncopate", serif;
+    .skip-link:focus-visible {
+        top: 0;
+        outline: none;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
     }
 
     .max-width {
-        max-width: min(var(--content-width) - 3rem, 100vw - 3rem);
+        max-width: min(var(--content-width), 100vw - 3rem);
         margin-inline: auto;
         width: 100%;
     }
 
-    p:has(img) {
+    /* Prose styles for MDX case study content */
+    .prose {
+        font-family: var(--font-body);
+        font-size: 1.0625rem;
+        line-height: 1.75;
+        color: var(--ink);
+    }
+
+    .prose h1 {
+        font-family: var(--font-serif);
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 900;
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        margin: 2.5rem 0 1rem;
+        color: var(--ink);
+    }
+
+    .prose h2 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 3rem 0 0.75rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--ink);
+        color: var(--ink);
+    }
+
+    .prose h3 {
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 2rem 0 0.5rem;
+        color: var(--ink);
+    }
+
+    .prose p {
+        margin: 0 0 1.25rem;
+        color: var(--neutral-600);
+    }
+
+    .prose strong {
+        color: var(--ink);
+        font-weight: 700;
+    }
+
+    .prose a {
+        color: var(--ink);
+        text-decoration: underline;
+        text-decoration-color: var(--red);
+        text-underline-offset: 3px;
+    }
+
+    .prose ul, .prose ol {
+        margin: 0 0 1.25rem;
+        padding-left: 1.5rem;
+        color: var(--neutral-600);
+    }
+
+    .prose li {
+        margin-bottom: 0.4rem;
+    }
+
+    .prose blockquote {
+        margin: 1.25rem 0 0;
+        padding: 0.25rem 1.25rem;
+        border-left: 2px solid var(--neutral-400);
+        font-family: var(--font-body);
+        font-style: normal;
+        font-size: 1.0625rem;
+        color: var(--neutral-500);
+    }
+
+    .prose blockquote p {
+        margin: 0;
+    }
+
+    .prose img {
+        width: 100%;
+        margin: 2rem 0;
+        border: 1px solid var(--muted);
+        filter: grayscale(15%);
+    }
+
+    .prose hr {
+        border: none;
+        border-top: 2px solid var(--ink);
+        margin: 3rem 0;
+    }
+
+    .prose em {
+        font-style: italic;
+    }
+
+    /* Prose table styles */
+    .prose table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+    }
+
+    .prose th {
+        background: var(--ink);
+        color: var(--paper);
+        padding: 0.625rem 1rem;
+        text-align: left;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+    }
+
+    .prose td {
+        padding: 0.625rem 1rem;
+        border-bottom: 1px solid var(--muted);
+        color: var(--neutral-600);
+    }
+
+    .prose tr:last-child td {
+        border-bottom: none;
+    }
+
+    .prose p:has(img) {
         display: contents;
     }
+
+    /* Chaos word — letter jitter animation */
+    .chaos-word {
+        display: inline-block;
+        cursor: default;
+        background-image: radial-gradient(circle, var(--red) 1px, transparent 1px);
+        background-size: 5px 2px;
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        padding-bottom: 2.5px;
+        transform-origin: center bottom;
+    }
+
+    .chaos-word span {
+        display: inline-block;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .chaos-word span { transform: none !important; }
+    }
 </style>
+
+<script>
+(function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    function wrapChaosNodes() {
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        const found = [];
+        let node;
+        while ((node = walker.nextNode())) {
+            if (!node.textContent?.includes('chaos')) continue;
+            if (node.parentElement?.classList.contains('chaos-letter')) continue;
+            if (node.parentElement?.classList.contains('chaos-word')) continue;
+            const tag = node.parentElement?.tagName?.toLowerCase();
+            if (['script', 'style', 'noscript'].includes(tag ?? '')) continue;
+            found.push(node);
+        }
+
+        found.forEach((textNode) => {
+            const text = textNode.textContent ?? '';
+            const idx = text.indexOf('chaos');
+            if (idx === -1) return;
+
+            const before = document.createTextNode(text.slice(0, idx));
+            const word = document.createElement('span');
+            word.className = 'chaos-word';
+            word.setAttribute('aria-label', 'chaos');
+
+            const letterSpans = [...'chaos'].map((ch) => {
+                const ls = document.createElement('span');
+                ls.className = 'chaos-letter';
+                ls.textContent = ch;
+                ls.setAttribute('aria-hidden', 'true');
+                word.appendChild(ls);
+                return ls;
+            });
+
+            const after = document.createTextNode(text.slice(idx + 5));
+            const parent = textNode.parentNode;
+            if (!parent) return;
+            parent.insertBefore(before, textNode);
+            parent.insertBefore(word, textNode);
+            parent.insertBefore(after, textNode);
+            parent.removeChild(textNode);
+
+            attachChaos(word, letterSpans);
+        });
+    }
+
+    function attachChaos(word: HTMLElement, letterSpans: HTMLElement[]) {
+        // Each letter gets its own irrational frequency set so motion never repeats
+        const p = letterSpans.map((_: HTMLElement, i: number) => ({
+            fx:  7.3 + i * 1.87,
+            fy:  5.9 + i * 2.11,
+            fr:  4.1 + i * 1.53,
+            fx2: 13.7 + i * 2.39,
+            fy2: 11.3 + i * 1.97,
+            fr2: 8.9  + i * 3.07,
+            px: i * 1.41,
+            py: i * 2.09,
+            pr: i * 0.73,
+        }));
+
+        let rafId = 0;
+        let intensity = 0;
+        let isActive = false;
+        let startTime = 0;
+
+        function animate(ts: number) {
+            if (!startTime) startTime = ts;
+            const t = (ts - startTime) / 1000 * 1.1;
+
+            intensity += isActive ? 0.05 : -0.07;
+            intensity = Math.max(0, Math.min(1, intensity));
+
+            // Ease the intensity curve so ramp-up feels organic
+            const e = intensity * intensity * (3 - 2 * intensity); // smoothstep
+
+            // Grow and thicken the whole word
+            word.style.transform = `scale(${1 + e * 1.1})`;
+            word.style.webkitTextStroke = `${(e * 0.8).toFixed(2)}px currentColor`;
+
+            letterSpans.forEach((ls: HTMLElement, i: number) => {
+                const tx  = e * (8  * Math.sin(p[i].fx  * t + p[i].px)
+                               + 4  * Math.sin(p[i].fx2 * t + p[i].px * 1.6));
+                const ty  = e * (6  * Math.sin(p[i].fy  * t + p[i].py)
+                               + 3  * Math.sin(p[i].fy2 * t + p[i].py * 2.3));
+                const rot = e * (26 * Math.sin(p[i].fr  * t + p[i].pr)
+                               + 10 * Math.sin(p[i].fr2 * t + p[i].pr * 1.4));
+                ls.style.transform = `translate(${tx}px, ${ty}px) rotate(${rot}deg)`;
+            });
+
+            if (intensity > 0.001 || isActive) {
+                rafId = requestAnimationFrame(animate);
+            } else {
+                word.style.transform = '';
+                word.style.webkitTextStroke = '';
+                letterSpans.forEach((ls: HTMLElement) => { ls.style.transform = ''; });
+                rafId = 0;
+                startTime = 0;
+            }
+        }
+
+        function start() {
+            isActive = true;
+            if (!rafId) {
+                startTime = 0;
+                rafId = requestAnimationFrame(animate);
+            }
+        }
+
+        function stop() { isActive = false; }
+
+        word.addEventListener('mouseenter', start);
+        word.addEventListener('mouseleave', stop);
+        word.addEventListener('focusin', start);
+        word.addEventListener('focusout', stop);
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', wrapChaosNodes);
+    } else {
+        wrapChaosNodes();
+    }
+})();
+</script>

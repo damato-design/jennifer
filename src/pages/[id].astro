@@ -1,11 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Float from '@components/Float.astro';
 import { getCollection, render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('other');
-  return posts.map((post) => {
+  return posts.map((post: CollectionEntry<'other'>) => {
     return {
       params: { id: post.slug },
       props: { post },
@@ -13,23 +13,171 @@ export async function getStaticPaths() {
   });
 }
 
-const { post } = Astro.props;
+const { post }: { post: CollectionEntry<'other'> } = Astro.props;
 const { Content } = await render(post);
-const bgimg = `url(${post.data.img})`;
 ---
 
 <style>
-  div {
-    background-position: center;
-    background-size: 98%;
-    height: 100%;
+  .about-layout {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    align-items: start;
+  }
+
+  .photo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about-photo {
     width: 100%;
+    display: block;
+    border: 1.5px solid var(--ink);
+  }
+
+  .photo-caption {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    margin-top: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .quick-facts {
+    margin-top: 1.5rem;
+    border: 1.5px solid var(--ink);
+  }
+
+  .quick-facts-header {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .quick-facts table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .fact-key {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--muted);
+    width: 40%;
+  }
+
+  .fact-val {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--ink);
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--muted);
+  }
+
+  .fact-val.red {
+    color: var(--red);
+  }
+
+  .quick-facts tr:last-child .fact-key,
+  .quick-facts tr:last-child .fact-val {
+    border-bottom: none;
+  }
+
+  .text-col {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--neutral-600);
+    text-align: left;
+  }
+
+  .text-col :global(p) {
+    margin: 0 0 1.25rem;
+  }
+
+  .text-col :global(em) {
+    font-style: italic;
+  }
+
+  .text-col :global(a) {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--red);
+    text-underline-offset: 3px;
+  }
+
+  .text-col :global(p:first-of-type::first-letter) {
+    font-family: var(--font-serif);
+    font-size: 4.25rem;
+    font-weight: 900;
+    float: left;
+    line-height: 0.78;
+    padding-right: 0.1em;
+    padding-top: 0.05em;
+    color: var(--ink);
+  }
+
+  @media (max-width: 640px) {
+    .about-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .photo-col {
+      order: -1;
+    }
   }
 </style>
 
 <Layout { ...post.data }>
-  <Float>
-    <div style={{ backgroundImage: bgimg }} />
-  </Float>
-	<Content/>
+  <div class="about-layout">
+    <div class="text-col">
+      <Content/>
+    </div>
+
+    <div class="photo-col">
+      {post.data.img && (
+        <>
+          <img src={post.data.img} alt="Jennifer D'Amato" class="about-photo" />
+          <div class="photo-caption">Fig. 1.1 &mdash; Jennifer D'Amato<br/>Design Systems &amp; Product Designer</div>
+        </>
+      )}
+
+      <div class="quick-facts">
+        <div class="quick-facts-header">Quick Facts</div>
+        <table>
+          <tr>
+            <th scope="row" class="fact-key">Specialty</th>
+            <td class="fact-val">Design Systems, Product Design</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fact-key">Focus</th>
+            <td class="fact-val">Accessibility</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fact-key">A11y</th>
+            <td class="fact-val red">WCAG 2.1 AA</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fact-key">Status</th>
+            <td class="fact-val">Open to Chats</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
 </Layout>

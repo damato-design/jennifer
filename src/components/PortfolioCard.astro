@@ -1,64 +1,161 @@
 ---
 const { url, img, title, desc, accent } = Astro.props;
-const bgimg = `url(${img})`;
+const accentColor = accent || 'var(--ink)';
 ---
 
-<style define:vars={{ accent }} >
-
+<style define:vars={{ accentColor }}>
     a {
-        display: flow-root;
+        display: grid;
+        grid-template-columns: 5fr 7fr;
         text-decoration: none;
+        color: inherit;
+        border: 1.5px solid var(--ink);
+        background: var(--paper);
+        transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
         position: relative;
     }
 
-    .filter {
-        filter: drop-shadow(12px -12px 0 color-mix(in oklch, var(--accent), transparent 10%));
+    a:hover {
+        box-shadow: 6px 6px 0 0 var(--ink);
+        transform: translate(-3px, -3px);
     }
 
-    .shape {
-        clip-path: url(#shape);
-        width: 55%;
-        shape-outside: url('shape.svg');
-        shape-margin: 1rem;
-        float: right;
-        aspect-ratio: 720/432;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    a:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        a {
+            transition: none;
+        }
+        a:hover {
+            box-shadow: none;
+            transform: none;
+        }
+        .image-wrap img {
+            transition: none;
+        }
+        a:hover .image-wrap img {
+            transform: none;
+        }
+    }
+
+    .image-wrap {
+        overflow: hidden;
+        aspect-ratio: 4 / 3;
+        background: var(--muted);
+        border-right: 1.5px solid var(--ink);
+        position: relative;
+    }
+
+    .image-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        filter: grayscale(80%);
+        transition: filter 0.35s ease-out, transform 0.35s ease-out;
+    }
+
+    a:hover .image-wrap img {
+        filter: grayscale(20%);
+        transform: scale(1.03);
     }
 
     .content {
-        padding-block: 1rem;
-        position: relative;
-        border-radius: 2rem;
-        max-width: 50%;
+        padding: 2rem 2.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.5rem;
     }
 
-    @media screen and (max-width: 600px) {
-        .filter {
-            position: absolute;
-            inset: 0;
+    .content-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tag {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--neutral-500);
+        margin-bottom: 0.875rem;
+        display: block;
+    }
+
+    .accent-rule {
+        height: 3px;
+        background: var(--accentColor);
+        width: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+        font-weight: 700;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.875rem;
+        color: var(--ink);
+    }
+
+    p {
+        font-family: var(--font-body);
+        font-size: 0.9375rem;
+        line-height: 1.65;
+        color: var(--neutral-600);
+        margin: 0;
+    }
+
+    .cta {
+        font-family: var(--font-mono);
+        font-size: 0.6875rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--ink);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        transition: gap 0.2s ease-out;
+        border-top: 1px solid var(--muted);
+        padding-top: 1rem;
+    }
+
+    a:hover .cta {
+        gap: 0.75rem;
+    }
+
+    @media (max-width: 640px) {
+        a {
+            grid-template-columns: 1fr;
+        }
+
+        .image-wrap {
+            border-right: none;
+            border-bottom: 1.5px solid var(--ink);
+            aspect-ratio: 16 / 9;
         }
 
         .content {
-            background: color-mix(in oklch, white, transparent 10%);
-            max-width: 300px;
+            padding: 1.5rem;
         }
     }
 </style>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
-    <clipPath id="shape" clipPathUnits="objectBoundingBox">
-        <path transform="scale(0.00138887, 0.00231481)" d="M504.1 0h-216c-22.7 0-44 10.7-57.6 28.8l-216 288C-21.1 364.3 12.8 432 72.1 432h432c119.3 0 216-96.7 216-216S623.4 0 504.1 0Z"/>
-    </clipPath>
-</svg>
-
 <a href={ url }>
-    <div class="filter">
-        <div class="shape" style={{ backgroundImage: bgimg }} />
+    <div class="image-wrap">
+        <img src={ img } alt={ title } />
     </div>
     <div class="content">
-        <h2>{ title }</h2>
-        <p>{ desc }</p>
+        <div class="content-top">
+            <div class="accent-rule"></div>
+            <h2>{ title }</h2>
+            <p>{ desc }</p>
+        </div>
+        <span class="cta">Read case study &rarr;</span>
     </div>
 </a>
