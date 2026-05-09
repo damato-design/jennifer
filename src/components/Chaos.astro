@@ -6,10 +6,19 @@
     .chaos-word {
         display: inline-block;
         position: relative;
-        text-decoration: underline wavy #CC0000;
-        text-underline-offset: 3px;
         transform-origin: center bottom;
         transition: transform 0.15s ease;
+    }
+
+    .chaos-word::after {
+        content: attr(aria-label);
+        position: absolute;
+        inset: 0;
+        color: transparent;
+        text-decoration: underline wavy #CC0000;
+        text-underline-offset: 6px;
+        pointer-events: none;
+        white-space: nowrap;
     }
 
     .chaos-letter {
