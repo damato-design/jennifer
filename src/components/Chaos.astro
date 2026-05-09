@@ -1,28 +1,24 @@
 ---
-import zigzagRaw from '../assets/chaos-zigzag.svg?raw';
-const zigzagBg = `url("data:image/svg+xml,${encodeURIComponent(zigzagRaw)}")`;
 ---
 <span class="chaos-word" aria-label="chaos"><span class="chaos-letter" aria-hidden="true">c</span><span class="chaos-letter" aria-hidden="true">h</span><span class="chaos-letter" aria-hidden="true">a</span><span class="chaos-letter" aria-hidden="true">o</span><span class="chaos-letter" aria-hidden="true">s</span></span>
 
-<style define:vars={{ zigzagBg }}>
+<style>
     .chaos-word {
         display: inline-block;
         position: relative;
-        padding-bottom: 8px;
         transform-origin: center bottom;
         transition: transform 0.15s ease;
     }
 
     .chaos-word::after {
-        content: '';
+        content: attr(aria-label);
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 6px;
-        background-image: var(--zigzagBg);
-        background-repeat: repeat-x;
-        background-size: 10px 6px;
+        inset: 0;
+        color: transparent;
+        text-decoration: underline wavy #CC0000;
+        text-underline-offset: 6px;
+        pointer-events: none;
+        white-space: nowrap;
     }
 
     .chaos-letter {
