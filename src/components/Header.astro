@@ -52,6 +52,6 @@ const accentColor = accent || 'var(--ink)';
     <div class="max-width">
         <div class="accent-rule"></div>
         <h1>{ title }</h1>
-        <p class="desc">{ desc }</p>
+        <p class="desc">{ desc ? desc : <slot name="desc" /> }</p>
     </div>
 </header>
