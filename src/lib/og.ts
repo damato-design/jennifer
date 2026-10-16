@@ -135,8 +135,6 @@ function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
                                                         style: {
                                                             display: 'flex',
                                                             alignItems: 'center',
-                                                            // Satori gives a text node the font's full line box,
-                                                            // which sits low in the chip without this
                                                             lineHeight: 1,
                                                             fontFamily: 'JetBrains Mono',
                                                             fontSize: '15px',
@@ -144,7 +142,13 @@ function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
                                                             textTransform: 'uppercase',
                                                             color: INK,
                                                             border: `1.5px solid ${INK}`,
-                                                            padding: '7px 12px',
+                                                            // The label is uppercase, so it has no descenders, but
+                                                            // the line box still reserves descender space below the
+                                                            // baseline. Centering the box therefore leaves the
+                                                            // letters high: measured 8.90px above against 10.80px
+                                                            // below at even padding. 8/6 evens that to 9.90/9.80
+                                                            // without changing the chip's height.
+                                                            padding: '8px 12px 6px',
                                                             marginLeft: i === 0 ? '0px' : '10px',
                                                         },
                                                         children: tag,
