@@ -1,7 +1,16 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import { ogRouteFor } from "@lib/og-route";
-const { title, desc } = Astro.props;
+const { title, desc: pageDesc } = Astro.props;
+
+// The home page has no `desc`: its tagline is rendered by the Chaos component
+// in Layout, not read from about.mdx. Without a fallback every description tag
+// on the home page ships empty, so search and share cards fall back to scraping.
+const SITE_NAME = "Jennifer D’Amato";
+const SITE_DESCRIPTION =
+    "Jennifer D’Amato is a design systems and product designer who turns tangled problems into scalable, accessible solutions. Explore case studies and résumé.";
+const desc = pageDesc || SITE_DESCRIPTION;
+const canonical = new URL(Astro.url.pathname, Astro.url).toString();
 
 // Each page gets its own Satori-rendered card, built from that page's own
 // content by src/pages/og/[...route].png.ts. Route and filename are derived
@@ -23,7 +32,7 @@ const schema = {
         name: "Jennifer D’Amato",
         alternateName: "jipdamato",
         description: "Design Systems Designer",
-        image: "http://jennifer.damato.design/images/jipdamato_image.jpg",
+        image: "https://jennifer.damato.design/images/jipdamato_image.jpg",
         sameAs: [
             "https://twitter.com/jipdamato",
             "https://linkedin.com/in/jipdamato",
@@ -39,9 +48,13 @@ const schema = {
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={desc} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={desc} />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
