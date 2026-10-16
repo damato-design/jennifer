@@ -181,7 +181,7 @@ function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
 }
 
 /** Clip a description to something that fits two lines at 30px. */
-export function clip(text: string, max = 150) {
+export function clip(text = '', max = 150) {
     if (text.length <= max) return text;
     return `${text.slice(0, text.lastIndexOf(' ', max)).trimEnd()}…`;
 }
