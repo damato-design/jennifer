@@ -562,6 +562,13 @@ import Footer from '@components/Footer.astro';
         position: relative;
     }
 
+    /* The lead-in phrase is the scan layer: it has to separate from the
+       muted body color, not just thicken against it. */
+    .job-bullets li strong {
+        color: var(--ink);
+        font-weight: 600;
+    }
+
     .job-bullets li::before {
         content: '·';
         position: absolute;
