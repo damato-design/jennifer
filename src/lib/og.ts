@@ -134,6 +134,10 @@ function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
                                                     props: {
                                                         style: {
                                                             display: 'flex',
+                                                            alignItems: 'center',
+                                                            // Satori gives a text node the font's full line box,
+                                                            // which sits low in the chip without this
+                                                            lineHeight: 1,
                                                             fontFamily: 'JetBrains Mono',
                                                             fontSize: '15px',
                                                             letterSpacing: '0.08em',
