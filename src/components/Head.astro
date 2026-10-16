@@ -1,7 +1,14 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import { ogRouteFor } from "@lib/og-route";
 const { title, desc } = Astro.props;
-const ogImage = new URL(`og-image.png`, Astro.url.origin).toString();
+
+// Each page gets its own Satori-rendered card, built from that page's own
+// content by src/pages/og/[...route].png.ts. Route and filename are derived
+// from the same helper so the two can't drift apart. Resolved against
+// Astro.url rather than the configured site, so the absolute URL points at
+// whatever origin is serving the page — localhost and deploy previews too.
+const ogImage = new URL(`/og/${ogRouteFor(Astro.url.pathname)}.png`, Astro.url).toString();
 const schema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
