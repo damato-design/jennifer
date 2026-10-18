@@ -72,9 +72,11 @@ export async function getStaticPaths() {
                 content: {
                     label: `${entry.data.project} · ${yearRange(entry.data)}`,
                     title: entry.data.title,
-                    desc: clip(entry.data.desc),
+                    // Match the share text when a longer seoDesc is set
+                    desc: clip(entry.data.seoDesc ?? entry.data.desc),
                     accent: entry.data.accent,
                     tags: entry.data.roles,
+                    cta: 'Read the case study →',
                 },
             },
         });
