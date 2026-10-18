@@ -153,7 +153,7 @@ function template({ label, title, desc, accent = INK, tags = [], cta }: OgConten
                                                   lineHeight: 1.45,
                                                   color: MUTED_TEXT,
                                                   marginTop: '24px',
-                                                  maxWidth: '940px',
+                                                  maxWidth: '100%',
                                                   whiteSpace: 'pre-line',
                                               },
                                               children:
