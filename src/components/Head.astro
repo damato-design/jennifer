@@ -1,7 +1,9 @@
 ---
 import { ClientRouter } from "astro:transitions";
 import { ogRouteFor } from "@lib/og-route";
-const { title, desc: pageDesc } = Astro.props;
+const { title, desc: shortDesc, seoDesc } = Astro.props;
+// Case studies can set a longer `seoDesc` for previews; `desc` is card copy
+const pageDesc = seoDesc || shortDesc;
 
 // The home page has no `desc`: its tagline is rendered by the Chaos component
 // in Layout, not read from about.mdx. Without a fallback every description tag

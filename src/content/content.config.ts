@@ -20,6 +20,9 @@ const work = defineCollection({
         endDate: z.date().optional(),
         accent: z.string(),
         desc: z.string(),
+        // Longer description for search and share previews; `desc` stays
+        // short because it's also the home card and header copy.
+        seoDesc: z.string().optional(),
         project: z.string(),
         roles: z.array(z.string()),
         img: z.string(),

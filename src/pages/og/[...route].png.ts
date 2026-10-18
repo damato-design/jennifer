@@ -75,6 +75,7 @@ export async function getStaticPaths() {
                     desc: clip(entry.data.desc),
                     accent: entry.data.accent,
                     tags: entry.data.roles,
+                    cta: 'Read the case study →',
                 },
             },
         });

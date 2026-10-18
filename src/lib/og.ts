@@ -43,14 +43,36 @@ export type OgContent = {
     accent?: string;
     /** Role tags, rendered as bordered chips along the bottom */
     tags?: string[];
+    /**
+     * Optional call to action, drawn as a solid button in the bottom-right
+     * corner. The URL moves up beside the label to make room for it.
+     */
+    cta?: string;
 };
 
-function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
+function template({ label, title, desc, accent = INK, tags = [], cta }: OgContent) {
     // Satori lays padding out *outside* a fixed-size root rather than inside it,
     // which pushes bottom-anchored content off the canvas. So the root carries
     // no padding: an explicitly sized frame with a margin does the insetting.
     const PAD_X = 72;
     const PAD_Y = 64;
+
+    const url = {
+        type: 'div',
+        props: {
+            style: {
+                display: 'flex',
+                fontFamily: 'JetBrains Mono',
+                fontSize: '20px',
+                letterSpacing: '0.08em',
+                color: INK,
+                flexShrink: 0,
+                // Centers the URL against a chip's height
+                marginBottom: cta ? 0 : '9px',
+            },
+            children: 'jennifer.damato.design',
+        },
+    };
 
     return {
         type: 'div',
@@ -81,14 +103,27 @@ function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
                                 props: {
                                     style: {
                                         display: 'flex',
-                                        fontFamily: 'JetBrains Mono',
-                                        fontSize: '20px',
-                                        letterSpacing: '0.15em',
-                                        textTransform: 'uppercase',
-                                        color: MUTED_TEXT,
+                                        justifyContent: 'space-between',
+                                        alignItems: 'baseline',
                                         marginTop: '38px',
                                     },
-                                    children: label,
+                                    children: [
+                                        {
+                                            type: 'div',
+                                            props: {
+                                                style: {
+                                                    display: 'flex',
+                                                    fontFamily: 'JetBrains Mono',
+                                                    fontSize: '20px',
+                                                    letterSpacing: '0.15em',
+                                                    textTransform: 'uppercase',
+                                                    color: MUTED_TEXT,
+                                                },
+                                                children: label,
+                                            },
+                                        },
+                                        ...(cta ? [url] : []),
+                                    ],
                                 },
                             },
                             {
@@ -193,22 +228,26 @@ function template({ label, title, desc, accent = INK, tags = [] }: OgContent) {
                                                 })),
                                             },
                                         },
-                                        {
-                                            type: 'div',
-                                            props: {
-                                                style: {
-                                                    display: 'flex',
-                                                    fontFamily: 'JetBrains Mono',
-                                                    fontSize: '20px',
-                                                    letterSpacing: '0.08em',
-                                                    color: INK,
-                                                    flexShrink: 0,
-                                                    // Centers the URL against a chip's height
-                                                    marginBottom: '9px',
-                                                },
-                                                children: 'jennifer.damato.design',
-                                            },
-                                        },
+                                        cta
+                                            ? {
+                                                  type: 'div',
+                                                  props: {
+                                                      style: {
+                                                          display: 'flex',
+                                                          alignItems: 'center',
+                                                          lineHeight: 1,
+                                                          fontFamily: 'Inter',
+                                                          fontSize: '24px',
+                                                          color: PAPER,
+                                                          backgroundColor: INK,
+                                                          padding: '16px 24px',
+                                                          flexShrink: 0,
+                                                          whiteSpace: 'nowrap',
+                                                      },
+                                                      children: cta,
+                                                  },
+                                              }
+                                            : url,
                                     ],
                                 },
                             },

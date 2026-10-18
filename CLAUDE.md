@@ -62,6 +62,7 @@ title: string          # Display title of the project
 date: YYYY-MM-DD       # Used for sort order — most recent appears first
 accent: css-color      # Brand/hero color, e.g. "rgb(71, 47, 145)" or "#3a2e9c"
 desc: string           # One-sentence description shown on home card and header
+seoDesc: string        # Optional. Longer meta/og description (aim 120–125 chars); falls back to desc
 project: string        # Context, e.g. "client", "internal", "personal"
 roles:                 # Array of role tags shown on the case study page
   - UX Design
