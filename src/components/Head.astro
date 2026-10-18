@@ -7,9 +7,27 @@ const { title, desc: pageDesc } = Astro.props;
 // in Layout, not read from about.mdx. Without a fallback every description tag
 // on the home page ships empty, so search and share cards fall back to scraping.
 const SITE_NAME = "Jennifer D’Amato";
+// Kept under ~125 characters, where social previews start truncating
 const SITE_DESCRIPTION =
-    "Jennifer D’Amato is a design systems and product designer who turns tangled problems into scalable, accessible solutions. Explore case studies and résumé.";
+    "Jennifer D’Amato is a design systems and product designer who turns tangled problems into scalable, accessible solutions.";
 const desc = pageDesc || SITE_DESCRIPTION;
+
+// `title` is also the page's H1, so it stays short. The document title adds
+// who and what around it, aiming for the 50–60 characters search results show.
+const ROLE = "Design Systems & Product Designer";
+const docTitle = (() => {
+    const path = Astro.url.pathname.replace(/\/$/, "");
+    if (path === "") return `${SITE_NAME} — ${ROLE}`;
+    if (path === "/about") return `About ${SITE_NAME} — ${ROLE}`;
+    if (title.includes(SITE_NAME)) return title;
+    // Case studies: the longest suffix that still fits
+    const options = [
+        `${title} — Case Study by ${SITE_NAME}, Product Designer`,
+        `${title} — Case Study by ${SITE_NAME}`,
+        `${title} — ${SITE_NAME}`,
+    ];
+    return options.find((t) => t.length <= 60) ?? options[options.length - 1];
+})();
 const canonical = new URL(Astro.url.pathname, Astro.url).toString();
 
 // Each page gets its own Satori-rendered card, built from that page's own
@@ -21,7 +39,7 @@ const ogImage = new URL(`/og/${ogRouteFor(Astro.url.pathname)}.png`, Astro.url).
 const schema = {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
-    name: title,
+    name: docTitle,
     description: desc,
     image: [ogImage],
     dateCreated: '2024-01-18T12:00:00-05:00',
@@ -43,7 +61,7 @@ const schema = {
 
 <head>
     <meta charset="UTF-8" />
-    <title>{title}</title>
+    <title>{docTitle}</title>
     <ClientRouter />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={desc} />
@@ -52,7 +70,7 @@ const schema = {
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={docTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
@@ -63,7 +81,7 @@ const schema = {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@jipdamato" />
     <meta name="twitter:creator" content="@jipdamato" />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={docTitle} />
     <meta name="twitter:description" content={desc} />
     <meta name="twitter:image" content={ogImage} />
     <meta name="twitter:image:alt" content={title} />
