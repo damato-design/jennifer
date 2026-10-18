@@ -3,6 +3,9 @@ import { getCollection, getEntry } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import { clip, renderOgImage, type OgContent } from '@lib/og';
 
+// Shared by the home, résumé and about cards
+const SITE_TAGS = ['Design Systems', 'Accessibility', 'Product Design'];
+
 const yearRange = (data: CollectionEntry<'work'>['data']) => {
     const start = new Date(data.date).getUTCFullYear();
     const end = data.endDate ? new Date(data.endDate).getUTCFullYear() : null;
@@ -21,10 +24,9 @@ export async function getStaticPaths() {
             props: {
                 content: {
                     label: 'Portfolio',
-                    title: about.data.title,
-                    desc: 'I tame chaos for a living.',
+                    title: 'Jennifer D’Amato',
                     accent: about.data.accent,
-                    tags: ['Design Systems', 'Accessibility', 'Product Design'],
+                    tags: SITE_TAGS,
                 },
             },
         },
@@ -34,9 +36,9 @@ export async function getStaticPaths() {
                 content: {
                     label: 'Résumé',
                     title: 'Jennifer D’Amato',
-                    desc: 'Lead Experience Designer specialising in design systems and accessibility.',
+                    desc: 'Lead Experience Designer specialising in design systems\nand accessibility.',
                     accent: '#CC0000',
-                    tags: ['Design Systems', 'Accessibility'],
+                    tags: SITE_TAGS,
                 },
             },
         },
@@ -49,8 +51,13 @@ export async function getStaticPaths() {
                 content: {
                     label: entry.slug,
                     title: entry.data.title,
-                    desc: clip(entry.data.desc),
+                    // about.mdx has no desc; its tagline lives in the Chaos component
+                    desc:
+                        entry.slug === 'about'
+                            ? ['I tame ', { text: 'chaos', squiggle: true }, ' for a living.']
+                            : clip(entry.data.desc),
                     accent: entry.data.accent,
+                    tags: entry.slug === 'about' ? SITE_TAGS : undefined,
                 },
             },
         });
